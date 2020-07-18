@@ -1,6 +1,6 @@
-# Show Current User
+# Show All User
 
-**URL** : `/api/user/`
+**URL** : `/api/user/{id}/`
 
 **Method** : `GET`
 
@@ -9,6 +9,10 @@
 ## Success Response
 
 **Code** : `200 OK`
+
+## Error Response
+
+**Code** : `404 Not Found`
 
 **JSON representation**
 

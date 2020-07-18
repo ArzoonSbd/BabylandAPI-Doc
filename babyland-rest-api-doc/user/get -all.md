@@ -1,6 +1,6 @@
-# Show Current User
+# Show All User
 
-**URL** : `/api/user/`
+**URL** : `/api/user/all/`
 
 **Method** : `GET`
 

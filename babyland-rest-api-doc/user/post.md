@@ -1,14 +1,14 @@
-# Show Current User
+# Create User
 
 **URL** : `/api/user/`
 
-**Method** : `GET`
+**Method** : `POST`
 
 **Auth required** : YES
 
 ## Success Response
 
-**Code** : `200 OK`
+**Code** : `201 Created`
 
 **JSON representation**
 
@@ -50,14 +50,5 @@
 **Parameters**
 | Field | Type | Description |
 | :---------- | :----: | ---------------: |
-| id | string | user id |
-| first_name | string | user first name |
-| last_name | string | user last name |
-| date_joined | string | user joined date |
-| is_active | boolean | user status |
-| email | string | user email |
-| gender | string | user gender |
-| phone | string | user phone number |
-| avatar | string | user image |
-| role | integer | user role |
-| last_login | string | user last login information |
+| email (required) | string | user email |
+| password (required)| string | user password |

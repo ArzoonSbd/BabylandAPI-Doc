@@ -1,14 +1,18 @@
-# Show Current User
+# Update User By ID
 
-**URL** : `/api/user/`
+**URL** : `/api/user/{id}/`
 
-**Method** : `GET`
+**Method** : `PUT`
 
 **Auth required** : YES
 
 ## Success Response
 
 **Code** : `200 OK`
+
+## Error Response
+
+**Code** : `400 Bad Request`
 
 **JSON representation**
 
@@ -51,13 +55,14 @@
 | Field | Type | Description |
 | :---------- | :----: | ---------------: |
 | id | string | user id |
-| first_name | string | user first name |
-| last_name | string | user last name |
+| first_name (<= 30 characters) | string | user first name |
+| last_name (<= 150 characters)| string | user last name |
 | date_joined | string | user joined date |
-| is_active | boolean | user status |
-| email | string | user email |
-| gender | string | user gender |
-| phone | string | user phone number |
+| is_active (Default: true) | boolean | user status |
+| email (required)| string | user email |
+| password (required and >= 8 characters)| string | user email |
+| gender (Enum: "M" "F" "O" "N")| string | user gender |
+| phone (<= 15 characters)| string | user phone number |
 | avatar | string | user image |
 | role | integer | user role |
 | last_login | string | user last login information |
