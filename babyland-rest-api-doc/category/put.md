@@ -1,5 +1,7 @@
 # Update Category By ID
 
+Change whole content of a category with given id.
+
 **URL** : `/apps/category/{id}/`
 
 **Method** : `PUT`
@@ -13,6 +15,34 @@
 ## Error Response
 
 **Code** : `404 Not Found`
+
+**Reason** : `No category with the id found`
+
+**Response** : 
+```json
+{
+    "detail": "Not found."
+}
+```
+
+**Code** : `400 Bad Request`
+
+**Reason** : `Field validation error`
+
+**Response** : 
+```json
+{
+    "<fieldname>": "[<Validation Error>]"
+}
+
+Example :
+
+{
+    "name": [
+        "Ensure this field has no more than 100 characters."
+    ]
+}
+```
 
 **JSON representation**
 
@@ -63,12 +93,12 @@
 ```
 
 **Parameters**
+
+Every fields below must be supplied.
+
 | Field | Type | Description |
 | :---------- | :----: | ---------------: |
-| id `(required)`| integer | category id |
-| url | string | category url|
 | name `(required and [ 1 .. 100 ] characters)` | string | category name |
 | level `(required and [ 0 .. 32767 ])`| integer | category level |
-| parent | string | parent category |
-| specification | object | category specification |
-| products | array of strings | products |
+| parent `(required if level isnot 0)` | uri-string | parent category |
+| specification `(not null - minimum null JSON required)` | json object | category specification |

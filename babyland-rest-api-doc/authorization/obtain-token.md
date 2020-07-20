@@ -1,12 +1,12 @@
 # Obtain Token
 
-Used to collect a Token for a registered User.
+Used to create a token for registered user. This can be called for login purpose.
 
 **URL** : `/api/token/obtain/`
 
 **Method** : `POST`
 
-**Auth required** : YES
+**Auth required** : NO
 
 ## Success Response
 

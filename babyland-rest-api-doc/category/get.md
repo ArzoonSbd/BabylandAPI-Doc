@@ -1,16 +1,18 @@
 # Get Category List
 
+Get list of all categories.
+
 **URL** : `/apps/category/`
 
 **Method** : `GET`
 
-**Auth required** : YES
+**Auth required** : NO
 
 ## Success Response
 
 **Code** : `200 OK`
 
-**JSON representation**
+**JSON representation of success response**
 
 ```json
 {
@@ -57,14 +59,3 @@
   "products": ["http://dev.babylandworld.com/apps/product/109/"]
 }
 ```
-
-**Parameters**
-| Field | Type | Description |
-| :---------- | :----: | ---------------: |
-| id | integer | category id |
-| url | string | category url|
-| name | string | category name |
-| level | integer | category level |
-| parent | string | parent category |
-| specification | object | category specification |
-| products | array of strings | products |

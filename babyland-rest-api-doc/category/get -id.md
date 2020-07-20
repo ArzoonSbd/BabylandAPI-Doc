@@ -1,10 +1,12 @@
 # Get Category By ID
 
+Get detail of a category with given id.
+
 **URL** : `/apps/category/{id}/`
 
 **Method** : `GET`
 
-**Auth required** : YES
+**Auth required** : NO
 
 ## Success Response
 
@@ -58,13 +60,14 @@
 }
 ```
 
-**Parameters**
-| Field | Type | Description |
-| :---------- | :----: | ---------------: |
-| id `(required)` | integer | category id |
-| url | string | category url|
-| name | string | category name |
-| level | integer | category level |
-| parent | string | parent category |
-| specification | object | category specification |
-| products | array of strings | products |
+## Failure Response
+
+**Code** : `404 Not Found`
+
+**JSON representation**
+```json
+{
+    "detail": "Not found."
+}
+```
+**Reason** : `Category with the given id doesn't exist.`
