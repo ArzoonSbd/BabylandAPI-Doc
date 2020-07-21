@@ -56,5 +56,5 @@ Used to create a token for registered user. This can be called for login purpose
 **Parameters**
 | Field | Type | Description |
 | :---------- | :----: | ---------------: |
-| email (required) | string | user email |
-| password (required)| string | user password |
+| email `(required)` | string | user email |
+| password `(required)`| string | user password |

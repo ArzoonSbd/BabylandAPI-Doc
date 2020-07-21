@@ -1,5 +1,7 @@
 # Create Product
 
+To create a product.
+
 **URL** : `/apps/product/`
 
 **Method** : `POST`
@@ -9,6 +11,40 @@
 ## Success Response
 
 **Code** : `201 Created`
+
+## Error Response
+
+**Code** : `404 Not Found`
+
+**Reason** : `No product with the id found`
+
+**Response** :
+
+```json
+{
+  "detail": "Not found."
+}
+```
+
+**Code** : `400 Bad Request`
+
+**Reason** : `Field validation error`
+
+**Response** :
+
+```json
+{
+    "<fieldname>": "[<Validation Error>]"
+}
+
+Example :
+
+{
+    "name": [
+        "Ensure this field has no more than 100 characters."
+    ]
+}
+```
 
 **JSON representation**
 
@@ -142,6 +178,6 @@
 | active_short_description | boolean | products active short description |
 | active_description | boolean | products active description |
 | active_dimension | boolean | products active dimension |
-| specification | object | products specification |
+| specification `(not null - minimum null JSON required)` | json object | category specification |
 | primary_category `(required)` | string | products primary category |
-| images | array of objects | products images |
+| images | json array of objects | products images |

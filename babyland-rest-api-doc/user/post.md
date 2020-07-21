@@ -1,5 +1,7 @@
 # Create User
 
+To create a user.
+
 **URL** : `/api/user/`
 
 **Method** : `POST`
@@ -9,6 +11,40 @@
 ## Success Response
 
 **Code** : `201 Created`
+
+## Error Response
+
+**Code** : `404 Not Found`
+
+**Reason** : `No user with the id found`
+
+**Response** :
+
+```json
+{
+  "detail": "Not found."
+}
+```
+
+**Code** : `400 Bad Request`
+
+**Reason** : `Field validation error`
+
+**Response** :
+
+```json
+{
+    "<fieldname>": "[<Validation Error>]"
+}
+
+Example :
+
+{
+    "name": [
+        "Ensure this field has no more than 100 characters."
+    ]
+}
+```
 
 **JSON representation**
 
@@ -50,5 +86,11 @@
 **Parameters**
 | Field | Type | Description |
 | :---------- | :----: | ---------------: |
-| email (required) | string | user email |
-| password (required)| string | user password |
+| first_name `(<= 30 characters)` | string | user first name |
+| last_name `(<= 150 characters)`| string | user last name |
+| date_joined | string | user joined date |
+| is_active `(Default: true)` | boolean | user status |
+| email `(required)`| string | user email |
+| gender `(Enum: "M" "F" "O" "N")`| string | user gender |
+| phone `(<= 15 characters)`| string | user phone number |
+| role `(-2147483648 .. 2147483647)`| integer | user role |

@@ -1,10 +1,12 @@
 # Get Tax By ID
 
+Get detail of a tax with given id.
+
 **URL** : `/apps/tax/{id}/`
 
 **Method** : `GET`
 
-**Auth required** : YES
+**Auth required** : NO
 
 ## Success Response
 
@@ -32,10 +34,16 @@
 }
 ```
 
-**Parameters**
-| Field | Type | Description |
-| :---------- | :----: | ---------------: |
-| id `(required)`| integer | tax id |
-| url | string | tax url|
-| name | string | tax name |
-| percent | number | tax percent |
+## Failure Response
+
+**Code** : `404 Not Found`
+
+**JSON representation**
+
+```json
+{
+  "detail": "Not found."
+}
+```
+
+**Reason** : `Tax with the given id doesn't exist.`

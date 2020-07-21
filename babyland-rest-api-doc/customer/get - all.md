@@ -1,10 +1,12 @@
 # Get All Customer List
 
+Get all customer.
+
 **URL** : `/api/customer/all/`
 
 **Method** : `GET`
 
-**Auth required** : YES
+**Auth required** : NO
 
 ## Success Response
 
@@ -27,7 +29,6 @@
     "city*": "string",
     "province*": "string",
     "phone": "string",
-    "title": "Phone",
     "country": "string"
   },
   "password": "string",
@@ -63,18 +64,3 @@
   "last_login": null
     },
 ```
-
-**Parameters**
-| Field | Type | Description |
-| :---------- | :----: | ---------------: |
-| id | integer | customer id |
-| first_name | string | customer first name |
-| last_name | string | customer last name |
-| date_joined | string | customer joined date |
-| is_active | boolean | customer status |
-| email | string | customer email |
-| address | object | customer address |
-| gender | string | customer gender |
-| phone | string | customer phone number |
-| avatar | string | customer image |
-| last_login | string | customer last login information |

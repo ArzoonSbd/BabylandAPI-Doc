@@ -1,5 +1,7 @@
 # Update Current User
 
+Update the partial fields of user.
+
 **URL** : `/api/user/`
 
 **Method** : `PATCH`
@@ -12,7 +14,37 @@
 
 ## Error Response
 
+**Code** : `404 Not Found`
+
+**Reason** : `No user found`
+
+**Response** :
+
+```json
+{
+  "detail": "Not found."
+}
+```
+
 **Code** : `400 Bad Request`
+
+**Reason** : `Field validation error`
+
+**Response** :
+
+```json
+{
+    "<fieldname>": "[<Validation Error>]"
+}
+
+Example :
+
+{
+    "name": [
+        "Ensure this field has no more than 100 characters."
+    ]
+}
+```
 
 **JSON representation**
 
@@ -54,15 +86,11 @@
 **Parameters**
 | Field | Type | Description |
 | :---------- | :----: | ---------------: |
-| id | string | user id |
-| first_name (<= 30 characters) | string | user first name |
-| last_name (<= 150 characters)| string | user last name |
+| first_name `(<= 30 characters)` | string | user first name |
+| last_name `(<= 150 characters)`| string | user last name |
 | date_joined | string | user joined date |
-| is_active (Default: true) | boolean | user status |
-| email (required)| string | user email |
-| password (required and >= 8 characters)| string | user email |
-| gender (Enum: "M" "F" "O" "N")| string | user gender |
-| phone (<= 15 characters)| string | user phone number |
-| avatar | string | user image |
-| role | integer | user role |
-| last_login | string | user last login information |
+| is_active `(Default: true)` | boolean | user status |
+| email `(required)`| string | user email |
+| gender `(Enum: "M" "F" "O" "N")`| string | user gender |
+| phone `(<= 15 characters)`| string | user phone number |
+| role `(-2147483648 .. 2147483647)`| integer | user role |

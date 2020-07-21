@@ -1,10 +1,12 @@
 # Get Tax List
 
+Get list of all tax.
+
 **URL** : `/apps/tax/`
 
 **Method** : `GET`
 
-**Auth required** : YES
+**Auth required** : NO
 
 ## Success Response
 
@@ -31,11 +33,3 @@
   "percent": 0.0
 }
 ```
-
-**Parameters**
-| Field | Type | Description |
-| :---------- | :----: | ---------------: |
-| id | integer | tax id |
-| url | string | tax url|
-| name | string | tax name |
-| percent | number | tax percent |

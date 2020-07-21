@@ -12,7 +12,37 @@
 
 ## Error Response
 
+**Code** : `404 Not Found`
+
+**Reason** : `No user with the id found`
+
+**Response** :
+
+```json
+{
+  "detail": "Not found."
+}
+```
+
 **Code** : `400 Bad Request`
+
+**Reason** : `Field validation error`
+
+**Response** :
+
+```json
+{
+    "<fieldname>": "[<Validation Error>]"
+}
+
+Example :
+
+{
+    "name": [
+        "Ensure this field has no more than 100 characters."
+    ]
+}
+```
 
 **JSON representation**
 
@@ -54,4 +84,4 @@
 **Parameters**
 | Field | Type | Description |
 | :---------- | :----: | ---------------: |
-| password (required)| string | user password |
+| password `(required)`| string | user password |

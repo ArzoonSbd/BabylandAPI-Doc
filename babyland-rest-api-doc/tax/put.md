@@ -1,5 +1,7 @@
 # Update Tax By ID
 
+Change whole content of a tax with given id.
+
 **URL** : `/apps/tax/{id}/`
 
 **Method** : `PUT`
@@ -12,7 +14,37 @@
 
 ## Error Response
 
+**Code** : `404 Not Found`
+
+**Reason** : `No tax with the id found`
+
+**Response** :
+
+```json
+{
+  "detail": "Not found."
+}
+```
+
 **Code** : `400 Bad Request`
+
+**Reason** : `Field validation error`
+
+**Response** :
+
+```json
+{
+    "<fieldname>": "[<Validation Error>]"
+}
+
+Example :
+
+{
+    "name": [
+        "Ensure this field has no more than 100 characters."
+    ]
+}
+```
 
 **JSON representation**
 
@@ -39,7 +71,5 @@
 **Parameters**
 | Field | Type | Description |
 | :---------- | :----: | ---------------: |
-| id `(required)` | string | tax id |
-| url | string | tax url|
 | name `(required and [1 .. 255 ] characters)`| string | tax name |
 | percent | number | tax percent |

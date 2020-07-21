@@ -1,5 +1,7 @@
 # Update Customer By ID
 
+Change whole content of a category with given id
+
 **URL** : `/api/customer/{id}/`
 
 **Method** : `PUT`
@@ -9,6 +11,40 @@
 ## Success Response
 
 **Code** : `200 OK`
+
+## Error Response
+
+**Code** : `404 Not Found`
+
+**Reason** : `No category with the id found`
+
+**Response** :
+
+```json
+{
+  "detail": "Not found."
+}
+```
+
+**Code** : `400 Bad Request`
+
+**Reason** : `Field validation error`
+
+**Response** :
+
+```json
+{
+    "<fieldname>": "[<Validation Error>]"
+}
+
+Example :
+
+{
+    "name": [
+        "Ensure this field has no more than 100 characters."
+    ]
+}
+```
 
 **JSON representation**
 
@@ -67,15 +103,11 @@
 **Parameters**
 | Field | Type | Description |
 | :---------- | :----: | ---------------: |
-| id `(required)`| integer | customer id |
-| first_name | string | customer first name |
-| last_name | string | customer last name |
+| first_name `(<= 30 characters)` | string | customer first name |
+| last_name `(<= 150 characters)` | string | customer last name |
 | date_joined | string | customer joined date |
-| is_active | boolean | customer status |
+| is_active `(Default: true)` | boolean | customer status |
 | email `(required)`| string | customer email |
-| address `(required)` | object | customer address |
-| password `(required)` | string | customer password |
-| gender | string | customer gender |
-| phone | string | customer phone number |
-| avatar | string | customer image |
-| last_login | string | customer last login information |
+| address `(required)` | JSON object | customer address |
+| gender `(Enum: "M" "F" "O" "N")`| string | customer gender |
+| phone `(<= 15 characters and Nullable)` | string | customer phone number |

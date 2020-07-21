@@ -1,5 +1,7 @@
 # Partial Update Customer
 
+Update the partial fields of customer.
+
 **URL** : `/api/customer/`
 
 **Method** : `PATCH`
@@ -9,6 +11,40 @@
 ## Success Response
 
 **Code** : `200 OK`
+
+## Error Response
+
+**Code** : `404 Not Found`
+
+**Reason** : `No customer found`
+
+**Response** :
+
+```json
+{
+  "detail": "Not found."
+}
+```
+
+**Code** : `400 Bad Request`
+
+**Reason** : `Field validation error`
+
+**Response** :
+
+```json
+{
+    "<fieldname>": "[<Validation Error>]"
+}
+
+Example :
+
+{
+    "name": [
+        "Ensure this field has no more than 100 characters."
+    ]
+}
+```
 
 **JSON representation**
 
@@ -27,7 +63,6 @@
     "city*": "string",
     "province*": "string",
     "phone": "string",
-    "title": "Phone",
     "country": "string"
   },
   "password": "string",
@@ -67,14 +102,11 @@
 **Parameters**
 | Field | Type | Description |
 | :---------- | :----: | ---------------: |
-| id `(required)` | integer | customer id |
-| first_name | string | customer first name |
-| last_name | string | customer last name |
+| first_name `(<= 30 characters)` | string | customer first name |
+| last_name `(<= 150 characters)` | string | customer last name |
 | date_joined | string | customer joined date |
-| is_active | boolean | customer status |
-| email | string | customer email |
-| address | object | customer address |
-| gender | string | customer gender |
-| phone | string | customer phone number |
-| avatar | string | customer image |
-| last_login | string | customer last login information |
+| is_active `(Default: true)` | boolean | customer status |
+| email `(required)`| string | customer email |
+| address `(required)` | JSON object | customer address |
+| gender `(Enum: "M" "F" "O" "N")`| string | customer gender |
+| phone `(<= 15 characters and Nullable)` | string | customer phone number |

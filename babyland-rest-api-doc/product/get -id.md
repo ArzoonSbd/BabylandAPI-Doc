@@ -1,10 +1,12 @@
 # Get Category By ID
 
+Get detail of a product with given id.
+
 **URL** : `/apps/product/{id}/`
 
 **Method** : `GET`
 
-**Auth required** : YES
+**Auth required** : NO
 
 ## Success Response
 
@@ -111,39 +113,16 @@
     },
 ```
 
-**Parameters**
-| Field | Type | Description |
-| :---------- | :----: | ---------------: |
-| id `(required)`| integer | product id |
-| url | string | product url|
-| active | boolean | product status |
-| slug | string | product slug |
-| sku | string | product sku |
-| name | string | product name |
-| price | number | products price |
-| discount_percent | number | products discount percent |
-| price_unit | string | products price unit |
-| short_description | string | products short description |
-| description | string | products description |
-| for_sale | boolean | products sales |
-| for_sale_percent | number | products sales percent |
-| for_sale_price | number | products sales price |
-| creation_date | string | products create date |
-| deliverable | boolean | products deliverable |
-| stock_amount | number | products stock amount |
-| stock_unit | string | products stock unit |
-| weight | number | products weight |
-| weight_unit | string | products weight unit |
-| height | number | products height |
-| height_unit | string | products height unit |
-| width | number | products width |
-| width_unit | string | products width unit |
-| tax_type | string | products tax type |
-| manufacturer | string | products manufacturer |
-| active_sku | boolean | products active sku status |
-| active_short_description | boolean | products active short description |
-| active_description | boolean | products active description |
-| active_dimension | boolean | products active dimension |
-| specification | object | products specification |
-| primary_category | string | products primary category |
-| images | array of objects | products images |
+## Failure Response
+
+**Code** : `404 Not Found`
+
+**JSON representation**
+
+```json
+{
+  "detail": "Not found."
+}
+```
+
+**Reason** : `Product with the given id doesn't exist.`

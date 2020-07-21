@@ -1,10 +1,12 @@
 # Get Customer By ID
 
+Get detail of a category with given id.
+
 **URL** : `/api/customer/{id}/`
 
 **Method** : `GET`
 
-**Auth required** : YES
+**Auth required** : NO
 
 ## Success Response
 
@@ -27,7 +29,6 @@
     "city*": "string",
     "province*": "string",
     "phone": "string",
-    "title": "Phone",
     "country": "string"
   },
   "password": "string",
@@ -64,17 +65,16 @@
     },
 ```
 
-**Parameters**
-| Field | Type | Description |
-| :---------- | :----: | ---------------: |
-| id `(required)` | integer | customer id |
-| first_name | string | customer first name |
-| last_name | string | customer last name |
-| date_joined | string | customer joined date |
-| is_active | boolean | customer status |
-| email | string | customer email |
-| address | object | customer address |
-| gender | string | customer gender |
-| phone | string | customer phone number |
-| avatar | string | customer image |
-| last_login | string | customer last login information |
+## Failure Response
+
+**Code** : `404 Not Found`
+
+**JSON representation**
+
+```json
+{
+  "detail": "Not found."
+}
+```
+
+**Reason** : `Customer with the given id doesn't exist.`
