@@ -18,7 +18,9 @@ request. A Token can be acquired from the Login view above.
 Each endpoint manipulates or displays information related to the User whose
 Token is provided with the request:
 
-- [Show info](user/get.md) : `GET /api/user/`
+- [Get Current User Details](babyland-rest-api-doc/user/get.md) : `GET /api/user/`
+- [Get User Details By ID](babyland-rest-api-doc/user/get-id.md) : `GET /api/user/{id}/`
+- [Get All User Details](babyland-rest-api-doc/user/get-all.md) : `GET /api/user/all/`
 - [Update info](user/put.md) : `PUT /api/user/`
 
 ### Account related
