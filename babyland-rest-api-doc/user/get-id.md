@@ -48,5 +48,3 @@ Get detail of a user with given id.
   "last_login": "2020-07-13T18:43:55.024820+02:00"
 }
 ```
-
-[Go Back](README.md)

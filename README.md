@@ -22,5 +22,3 @@ Token is provided with the request:
 - [Get User Details By ID](babyland-rest-api-doc/user/get-id.md) : `GET /api/user/{id}/`
 - [Get All User Details](babyland-rest-api-doc/user/get-all.md) : `GET /api/user/all/`
 - [Update info](user/put.md) : `PUT /api/user/`
-
-[Go Back](README.md)
