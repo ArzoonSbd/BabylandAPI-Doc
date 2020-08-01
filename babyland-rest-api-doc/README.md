@@ -24,6 +24,30 @@ Customer API Endpoints listed below:
 
 - [Delete Customer by ID](customer/delete.md) : `DELETE /api/customer/{id}/`
 
+### Product API
+
+Product API Endpoints listed below:
+
+- [Get all Products](product/get.md) : `GET /apps/product/`
+- [Get Product details by ID](product/get-id.md) : `GET /apps/product/{id}/`
+- [Create Product](product/post.md) : `POST /apps/Product/`
+- [Update Product by ID](product/put.md) : `PUT /apps/product/{id}/`
+- [Partial Update Product by ID](product/patch.md) : `PATCH /apps/product/{id}/`
+
+- [Delete Product by ID](product/delete.md) : `DELETE /apps/product/{id}/`
+
+### Tax API
+
+Tax API Endpoints listed below:
+
+- [Get all Tax](tax/get.md) : `GET /apps/tax/`
+- [Get Tax details by ID](tax/get-id.md) : `GET /apps/tax/{id}/`
+- [Create Tax](tax/post.md) : `POST /apps/tax/`
+- [Update Tax by ID](tax/put.md) : `PUT /apps/tax/{id}/`
+- [Partial Update Tax by ID](tax/patch.md) : `PATCH /apps/tax/{id}/`
+
+- [Delete Tax by ID](tax/delete.md) : `DELETE /apps/tax/{id}/`
+
 ### User API
 
 User API Endpoints listed below:

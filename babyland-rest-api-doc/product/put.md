@@ -181,3 +181,5 @@ Example :
 | specification `(not null - minimum null JSON required)` | json object | category specification |
 | primary_category `(required)` | string | products primary category |
 | images | json array of objects | products images |
+
+[Back](../README.md)

@@ -126,3 +126,5 @@ Get detail of a product with given id.
 ```
 
 **Reason** : `Product with the given id doesn't exist.`
+
+[Back](../README.md)

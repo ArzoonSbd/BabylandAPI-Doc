@@ -47,3 +47,5 @@ Get detail of a tax with given id.
 ```
 
 **Reason** : `Tax with the given id doesn't exist.`
+
+[Back](../README.md)
