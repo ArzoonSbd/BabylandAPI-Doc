@@ -1,3 +1,5 @@
+[Back](../README.md)
+
 # Create Customer
 
 To create a customer.
@@ -101,7 +103,7 @@ Example :
 
 **Parameters**
 | Field | Type | Description |
-| :---------- | :----: | ---------------: |
+| ------------------------------------------------------- | ----------- | ---------------------- |
 | first_name `(<= 30 characters)` | string | customer first name |
 | last_name `(<= 150 characters)` | string | customer last name |
 | date_joined | string | customer joined date |

@@ -1,3 +1,5 @@
+[Back](../README.md)
+
 # Delete User By ID
 
 **URL** : `/api/user/{id}/`

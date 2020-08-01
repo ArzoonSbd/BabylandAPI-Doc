@@ -1,3 +1,5 @@
+[Back](../README.md)
+
 # Create Category
 
 To create a category.
@@ -95,13 +97,6 @@ Example :
 ```
 
 **Parameters**
-
-<!-- | Field                                                   |    Type     |            Description |
-| :------------------------------------------------------ | :---------: | ---------------------: |
-| name `(required and [ 1 .. 100 ] characters)`           |   string    |          category name |
-| level `(required and [ 0 .. 32767 ])`                   |   integer   |         category level |
-| parent `(required if level isnot 0)`                    | uri-string  |        parent category |
-| specification `(not null - minimum null JSON required)` | json object | category specification | -->
 
 | Field                                                   | Type        | Description            |
 | ------------------------------------------------------- | ----------- | ---------------------- |

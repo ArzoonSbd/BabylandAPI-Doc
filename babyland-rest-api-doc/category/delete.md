@@ -1,3 +1,5 @@
+[Back](../README.md)
+
 # Delete Category By ID
 
 **URL** : `/apps/category/{id}/`

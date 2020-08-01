@@ -1,3 +1,5 @@
+[Back](../README.md)
+
 # Update Current User
 
 Update the partial fields of user.
@@ -85,7 +87,7 @@ Example :
 
 **Parameters**
 | Field | Type | Description |
-| :---------- | :----: | ---------------: |
+| ------------------------------------------------------- | ----------- | ---------------------- |
 | first_name `(<= 30 characters)` | string | user first name |
 | last_name `(<= 150 characters)`| string | user last name |
 | date_joined | string | user joined date |

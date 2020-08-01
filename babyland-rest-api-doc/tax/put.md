@@ -1,3 +1,5 @@
+[Back](../README.md)
+
 # Update Tax By ID
 
 Change whole content of a tax with given id.
@@ -70,7 +72,7 @@ Example :
 
 **Parameters**
 | Field | Type | Description |
-| :---------- | :----: | ---------------: |
+| ------------------------------------------------------- | ----------- | ---------------------- |
 | name `(required and [1 .. 255 ] characters)`| string | tax name |
 | percent | number | tax percent |
 

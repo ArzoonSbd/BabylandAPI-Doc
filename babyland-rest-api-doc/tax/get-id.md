@@ -1,3 +1,5 @@
+[Back](../README.md)
+
 # Get Tax By ID
 
 Get detail of a tax with given id.

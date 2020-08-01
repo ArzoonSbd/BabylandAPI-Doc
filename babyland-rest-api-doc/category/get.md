@@ -1,3 +1,5 @@
+[Back](../README.md)
+
 # Get Category List
 
 Get list of all categories.

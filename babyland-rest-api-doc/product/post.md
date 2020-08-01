@@ -1,3 +1,5 @@
+[Back](../README.md)
+
 # Create Product
 
 To create a product.
@@ -149,7 +151,7 @@ Example :
 
 **Parameters**
 | Field | Type | Description |
-| :---------- | :----: | ---------------: |
+| ------------------------------------------------------- | ----------- | ---------------------- |
 | active | boolean | product status |
 | slug `(required and [ 1 .. 50 ] characters, ^[-a-zA-Z0-9_]+\$)` | string | product slug |
 | sku `(required and [ 1 .. 255 ] characters)` | string | product sku |

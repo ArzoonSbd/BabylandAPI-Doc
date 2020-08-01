@@ -1,3 +1,5 @@
+[Back](../README.md)
+
 # Update User Password
 
 **URL** : `/api/user/password/`
@@ -83,7 +85,7 @@ Example :
 
 **Parameters**
 | Field | Type | Description |
-| :---------- | :----: | ---------------: |
+| ------------------------------------------------------- | ----------- | ---------------------- |
 | password `(required)`| string | user password |
 
 [Back](../README.md)

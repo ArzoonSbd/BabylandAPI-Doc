@@ -1,3 +1,5 @@
+[Back](../README.md)
+
 # Delete Customer By ID
 
 **URL** : `/api/customer/{id}/`

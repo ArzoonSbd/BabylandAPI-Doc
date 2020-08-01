@@ -1,3 +1,5 @@
+[Back](../README.md)
+
 # Update Customer By ID
 
 Change whole content of a category with given id
@@ -102,7 +104,7 @@ Example :
 
 **Parameters**
 | Field | Type | Description |
-| :---------- | :----: | ---------------: |
+| ------------------------------------------------------- | ----------- | ---------------------- |
 | first_name `(<= 30 characters)` | string | customer first name |
 | last_name `(<= 150 characters)` | string | customer last name |
 | date_joined | string | customer joined date |
