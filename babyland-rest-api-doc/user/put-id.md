@@ -94,3 +94,5 @@ Example :
 | gender `(Enum: "M" "F" "O" "N")`| string | user gender |
 | phone `(<= 15 characters)`| string | user phone number |
 | role `(-2147483648 .. 2147483647)`| integer | user role |
+
+[Back](../README.md)

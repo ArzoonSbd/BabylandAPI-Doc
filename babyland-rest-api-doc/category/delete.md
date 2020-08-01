@@ -15,8 +15,11 @@
 **Code** : `404 Not Found`
 
 **Response**:
- ```json
+
+```json
 {
   "detail": "Not found."
 }
-``` 
+```
+
+[Back](../README.md)

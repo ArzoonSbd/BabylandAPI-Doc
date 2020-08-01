@@ -111,3 +111,5 @@ Example :
 | address `(required)` | JSON object | customer address |
 | gender `(Enum: "M" "F" "O" "N")`| string | customer gender |
 | phone `(<= 15 characters and Nullable)` | string | customer phone number |
+
+[Back](../README.md)

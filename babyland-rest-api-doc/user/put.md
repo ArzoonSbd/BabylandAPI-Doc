@@ -85,3 +85,5 @@ Example :
 | Field | Type | Description |
 | :---------- | :----: | ---------------: |
 | password `(required)`| string | user password |
+
+[Back](../README.md)

@@ -65,9 +65,13 @@ Get detail of a category with given id.
 **Code** : `404 Not Found`
 
 **JSON representation**
+
 ```json
 {
-    "detail": "Not found."
+  "detail": "Not found."
 }
 ```
+
 **Reason** : `Category with the given id doesn't exist.`
+
+[Back](../README.md)

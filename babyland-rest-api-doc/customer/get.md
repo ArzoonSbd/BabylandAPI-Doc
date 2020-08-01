@@ -1,6 +1,6 @@
 # Get Customer List
 
-Get list of all customer.
+Get details of current customer.
 
 **URL** : `/api/customer/`
 
@@ -64,3 +64,5 @@ Get list of all customer.
         "last_login": null
     },
 ```
+
+[Back](../README.md)

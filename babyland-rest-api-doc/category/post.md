@@ -18,10 +18,11 @@ To create a category.
 
 **Reason** : `No category with the id found`
 
-**Response** : 
+**Response** :
+
 ```json
 {
-    "detail": "Not found."
+  "detail": "Not found."
 }
 ```
 
@@ -29,7 +30,8 @@ To create a category.
 
 **Reason** : `Field validation error`
 
-**Response** : 
+**Response** :
+
 ```json
 {
     "<fieldname>": "[<Validation Error>]"
@@ -99,3 +101,5 @@ Example :
 | level `(required and [ 0 .. 32767 ])`| integer | category level |
 | parent `(required if level isnot 0)` | uri-string | parent category |
 | specification `(not null - minimum null JSON required)` | json object | category specification |
+
+[Back](../README.md)
