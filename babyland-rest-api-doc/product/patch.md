@@ -105,14 +105,11 @@ Example :
   "price_unit": "Nepalese Rupee",
   "short_description": "cars for kids",
   "description": "this is cars for kids. Your kids wil be happy !!!hshhspii;hdbbcbbhhskjsj;fnnhdjhdkn;djsj",
-  "for_sale": false,
-  "for_sale_percent": 0.0,
-  "for_sale_price": 0.0,
   "creation_date": "2020-07-18T17:42:53.729223+02:00",
   "deliverable": true,
   "stock_amount": 20.0,
   "stock_unit": "piece",
-  "weight": 1.0,
+  "weight": "",
   "weight_unit": "",
   "height": null,
   "height_unit": "",
@@ -126,6 +123,7 @@ Example :
   "active_short_description": true,
   "active_description": true,
   "active_dimension": false,
+  "active_weight": false,
   "specification": {
     "name": "tesla",
     "type": "kids",
@@ -152,36 +150,34 @@ Example :
 **Parameters**
 | Field | Type | Description |
 | ------------------------------------------------------- | ----------- | ---------------------- |
-| active | boolean | product status |
-| slug `(required and [ 1 .. 50 ] characters, ^[-a-zA-Z0-9_]+\$)` | string | product slug |
+| active `(default true)` | boolean | product status |
+| slug `(read only)` | string | product slug |
 | sku `(required and [ 1 .. 255 ] characters)` | string | product sku |
 | name `(required and [ 1 .. 255 ] characters)` | string | product name |
-| price | number | products price |
-| discount_percent | number | products discount percent |
-| price_unit | string | products price unit |
-| short_description `(required and [ 1 .. 255 ] characters)` | string | products short description |
-| description `(required and [ 1 .. 3000 ] characters)` | string | products description |
-| for_sale | boolean | products sales |
-| for_sale_percent | number | products sales percent |
-| for_sale_price | number | products sales price |
-| creation_date | string | products create date |
-| deliverable | boolean | products deliverable |
-| stock_amount | number | products stock amount |
+| price `(required)`| number | products price |
+| discount_percent `(default 0)`| number | products discount percent |
+| price_unit `(default Nrs.)`| string | products price unit |
+| short_description `(required and [ 1 .. 1000 ] characters)` | string | products short description |
+| description `(optional and [ 1 .. 8000 ] characters)` | string | products description |
+| creation_date `(read only and default date now)` | date | products create date |
+| deliverable `(default true)`| boolean | products deliverable |
+| stock_amount `(default 1)`| number | products stock amount |
 | stock_unit `(required and [ 1 .. 255 ] characters)` | string | products stock unit |
 | weight | number | products weight |
-| weight_unit | string | products weight unit |
+| weight_unit `(max 255 characters)`| string | products weight unit |
 | height | number | products height |
-| height_unit | string | products height unit |
+| height_unit `(max 255 characters)` | string | products height unit |
 | width | number | products width |
-| width_unit | string | products width unit |
-| tax_type | string | products tax type |
+| width_unit `(max 255 characters)`| string | products width unit |
+| tax_type `(foreign key to product)`| string | products tax type |
 | manufacturer `(required and [ 1 .. 255 ] characters)` | string | products manufacturer |
-| active_sku | boolean | products active sku status |
-| active_short_description | boolean | products active short description |
-| active_description | boolean | products active description |
-| active_dimension | boolean | products active dimension |
+| active_sku `(default true)`| boolean | products active sku status |
+| active_short_description `(default true)`| boolean | products active short description |
+| active_description `(default true)`| boolean | products active description |
+| active_dimension `(default false)` | boolean | products active dimension |
+| active_weight `(default false)`| boolean | products active weight |
 | specification `(not null - minimum null JSON required)` | json object | category specification |
-| primary_category `(required)` | string | products primary category |
+| primary_category `(required and foreign key to category)` | string | products primary category |
 | images | json array of objects | products images |
 
 [Back](../README.md)

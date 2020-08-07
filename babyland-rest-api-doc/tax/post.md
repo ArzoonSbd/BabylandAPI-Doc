@@ -43,7 +43,7 @@ Example :
 
 {
     "name": [
-        "Ensure this field has no more than 100 characters."
+        "Ensure this field has no more than 255 characters."
     ]
 }
 ```
@@ -74,6 +74,6 @@ Example :
 | Field | Type | Description |
 | ------------------------------------------------------- | ----------- | ---------------------- |
 | name `(required and [1 .. 255 ] characters)`| string | tax name |
-| percent | number | tax percent |
+| percent `(from 1 to 100 %)` | number | tax percent |
 
 [Back](../README.md)

@@ -41,7 +41,7 @@ Example :
 
 {
     "name": [
-        "Ensure this field has no more than 100 characters."
+        "Ensure this field has no more than 150 characters."
     ]
 }
 ```
