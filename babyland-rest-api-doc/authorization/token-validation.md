@@ -14,9 +14,28 @@ Used to validate the token provided for given purpose and given user.
 
 **Code** : `200 OK`
 
+**Content** :
+
+```json
+{
+  "detail": "valid"
+}
+```
+
 ## Error Response
 
 **Condition** : If required fields arenot provided.
+
+**Code** : `404 Not found`
+
+**Content** :
+
+```json
+{
+  "detail": "Token and identifier are needed."
+}
+```
+**Condition** : If token is expired.
 
 **Code** : `400 Bad Request`
 
@@ -24,7 +43,7 @@ Used to validate the token provided for given purpose and given user.
 
 ```json
 {
-  "detail": "Token and identifier are needed."
+  "detail": "Token expires."
 }
 ```
 
