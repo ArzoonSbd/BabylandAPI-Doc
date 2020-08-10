@@ -1,6 +1,6 @@
 [Back](../README.md)
 
-# Token Blacklist
+# Token Validation
 
 Used to validate the token provided for given purpose and given user.
 
