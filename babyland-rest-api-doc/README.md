@@ -1,3 +1,14 @@
+### Authorization API
+
+Autorization API Endpoints listed below:
+
+- [Staff/Admin login](authorization/admin.md) : `POST /api/token/obtain/`
+- [Customer login](authorization/get.md) : `POST /api/customer/token/obtain/`
+- [Token Blacklist](authorization/token-blacklist.md) : `POST /api/token/blacklist/`
+- [Refresh Token](authorization/refresh-token.md) : `POST /api/token/blacklist/`
+- [Email Activation](authorization/email-validation.md) : `POST /api/user/activate/`
+- [Token Validation](authorization/token-validation.md) : `POST /api/token/valid/`
+
 ### Category API
 
 Category API Endpoints listed below:
