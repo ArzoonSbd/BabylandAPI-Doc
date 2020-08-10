@@ -14,9 +14,28 @@ Used to activate the user with email validation through token.
 
 **Code** : `200 OK`
 
+**Content** :
+
+```json
+{
+  "detail": "Account activated"
+}
+```
+
 ## Error Response
 
 **Condition** : If required fields arenot provided.
+
+**Code** : `404 Not found`
+
+**Content** :
+
+```json
+{
+  "detail": "Token and identifier are needed."
+}
+```
+**Condition** : If token is expired.
 
 **Code** : `400 Bad Request`
 
@@ -24,7 +43,7 @@ Used to activate the user with email validation through token.
 
 ```json
 {
-  "detail": "Token and identifier are needed."
+  "detail": "Token expires."
 }
 ```
 
