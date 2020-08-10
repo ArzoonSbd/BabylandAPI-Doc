@@ -2,7 +2,7 @@
 
 # Token Blacklist
 
-Used to validate user email address.
+Used to validate the token provided for given purpose and given user.
 
 **URL** : `/api/user/activate/`
 
@@ -16,7 +16,7 @@ Used to validate user email address.
 
 ## Error Response
 
-**Condition** : If valid authentication is not provided.
+**Condition** : If required fields arenot provided.
 
 **Code** : `400 Bad Request`
 
@@ -38,7 +38,7 @@ Used to validate user email address.
 }
 ```
 
-\*Data example\*\*
+**Data example**
 
 ```json
 {
