@@ -1,6 +1,6 @@
 [Back](../README.md)
 
-# Token Blacklist
+# Email Activation
 
 Used to activate the user with email validation through token.
 
