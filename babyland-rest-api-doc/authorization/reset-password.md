@@ -86,6 +86,6 @@ Used to reset the user/customer password through token.
 | token `(required and 10 to 50 characters)` | string | validate user token|
 | identifier `(required)`| longint | validate userID|
 | type `(required)`| 1 | value must be 1|
-| new_password `(required | at least 8 character with 1 digit and 1 number)`| string | valid new password|
+| new_password `(required and at least 8 character with 1 digit and 1 number)`| string | valid new password|
 
 [Back](../README.md)
