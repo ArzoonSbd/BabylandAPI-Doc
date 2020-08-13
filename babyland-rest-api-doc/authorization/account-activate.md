@@ -1,10 +1,10 @@
 [Back](../README.md)
 
-# Token Validation
+# Account activation
 
-Used to validate the token provided for given purpose and given user.
+Used to activate the user with email validation through token.
 
-**URL** : `/api/token/valid/`
+**URL** : `/api/user/activate/`
 
 **Method** : `POST`
 
@@ -18,7 +18,7 @@ Used to validate the token provided for given purpose and given user.
 
 ```json
 {
-  "detail": "valid"
+  "detail": "Account activated"
 }
 ```
 
@@ -71,7 +71,7 @@ Used to validate the token provided for given purpose and given user.
 | Field | Type | Description |
 | :---------- | :----: | ---------------: |
 | token `(required and 10 to 50 characters)` | string | validate user token|
-| identifier`(required)` | longint | validate userID|
-| type `(required)`| ENUM[0,1] | where 0 is Email_Verification_Token and 1 is Forget_Password_Token |
+| identifier `(required)`| longint | validate userID|
+| type `(required)`| 0 | value must be 0|
 
 [Back](../README.md)

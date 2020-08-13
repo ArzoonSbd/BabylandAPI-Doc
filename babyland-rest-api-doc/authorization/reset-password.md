@@ -1,10 +1,10 @@
 [Back](../README.md)
 
-# Email Activation
+# Account activation
 
-Used to activate the user with email validation through token.
+Used to reset the user/customer password through token.
 
-**URL** : `/api/user/activate/`
+**URL** : `/api/user/reset/`
 
 **Method** : `POST`
 
@@ -18,7 +18,7 @@ Used to activate the user with email validation through token.
 
 ```json
 {
-  "detail": "Account activated"
+  "detail": "Password changed"
 }
 ```
 
@@ -46,6 +46,17 @@ Used to activate the user with email validation through token.
   "detail": "Token expires."
 }
 ```
+**Condition** : If new password doesn't satisfy minimum requirement.
+
+**Code** : `400 Bad Request`
+
+**Content** :
+
+```json
+{
+  "detail": "Password must be at least 8 characters long."
+}
+```
 
 **JSON representation**
 
@@ -53,7 +64,8 @@ Used to activate the user with email validation through token.
 {
   "token": "string",
   "identifier": "longint",
-  "type": "short"
+  "type": "short",
+  "new_password": "string",
 }
 ```
 
@@ -63,7 +75,8 @@ Used to activate the user with email validation through token.
 {
   "token": "fb3c669bb0bb8580520a25cac35a0a7",
   "identifier": "2256",
-  "type": "0"
+  "type": "1",
+  "new_password": "newPass12@",
 }
 ```
 
@@ -72,6 +85,7 @@ Used to activate the user with email validation through token.
 | :---------- | :----: | ---------------: |
 | token `(required and 10 to 50 characters)` | string | validate user token|
 | identifier `(required)`| longint | validate userID|
-| type `(required)`| 0 | type must be 0|
+| type `(required)`| 1 | value must be 1|
+| new_password `(required | at least 8 character with 1 digit and 1 number)`| string | valid new password|
 
 [Back](../README.md)
