@@ -8,7 +8,7 @@ Get list of all user.
 
 **Method** : `GET`
 
-**Auth required** : NO
+**Auth required** : Yes
 
 ## Success Response
 

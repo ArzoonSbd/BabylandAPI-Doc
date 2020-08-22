@@ -1,8 +1,8 @@
 [Back](../README.md)
 
-# Delete Product By ID
+# Delete Product By Slug
 
-**URL** : `/apps/product/{id}/`
+**URL** : `/apps/product/{slug}/`
 
 **Method** : `DELETE`
 

@@ -1,10 +1,10 @@
 [Back](../README.md)
 
-# Update Product By ID
+# Update Product By Slug
 
-Change whole content of a product with given id.
+Change whole content of a product with given slug.
 
-**URL** : `/apps/product/{id}/`
+**URL** : `/apps/product/{slug}/`
 
 **Method** : `PUT`
 
@@ -52,56 +52,7 @@ Example :
 
 ```json
 {
-  "id": 107,
-  "url": "http://dev.babylandworld.com/apps/product/107/",
-  "active": true,
-  "slug": "cars-for-kids",
-  "sku": "kids-car-2020",
-  "name": "kids car",
-  "price": 2000.0,
-  "discount_percent": 10.0,
-  "price_unit": "Nepalese Rupee",
-  "short_description": "cars for kids",
-  "description": "this is cars for kids. Your kids wil be happy !!!hshhspii;hdbbcbbhhskjsj;fnnhdjhdkn;djsj",
-  "creation_date": "2020-07-18T17:42:53.729223+02:00",
-  "deliverable": true,
-  "stock_amount": 20.0,
-  "stock_unit": "piece",
-  "weight": "",
-  "weight_unit": "",
-  "height": null,
-  "height_unit": "",
-  "length": null,
-  "length_unit": "",
-  "width": null,
-  "width_unit": "",
-  "tax_type": "http://dev.babylandworld.com/apps/tax/37/",
-  "manufacturer": "tesla",
-  "active_sku": true,
-  "active_short_description": true,
-  "active_description": true,
-  "active_dimension": false,
-  "active_weight": false,
-  "specification": {
-    "name": "tesla",
-    "type": "kids",
-    "model": "2020"
-  },
-  "primary_category": "http://dev.babylandworld.com/apps/category/121/",
-  "images": [
-    {
-      "id": 88,
-      "product": 107,
-      "name": "cars",
-      "image_file": "http://dev.babylandworld.com/media/products/logo.jpg"
-    },
-    {
-      "id": 89,
-      "product": 107,
-      "name": "me",
-      "image_file": "http://dev.babylandworld.com/media/products/es6.jpeg"
-    }
-  ]
+  "price_unit": "Nepalese Rupee"
 }
 ```
 

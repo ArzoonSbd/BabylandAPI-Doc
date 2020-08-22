@@ -8,7 +8,7 @@ Get details of current customer.
 
 **Method** : `GET`
 
-**Auth required** : NO
+**Auth required** : Yes
 
 ## Success Response
 

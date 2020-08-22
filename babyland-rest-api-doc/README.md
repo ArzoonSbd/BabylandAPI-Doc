@@ -16,12 +16,12 @@ Autorization API Endpoints listed below:
 Category API Endpoints listed below:
 
 - [Get all Category](category/get.md) : `GET /apps/category/`
-- [Get Category details by ID](category/get-id.md) : `GET /apps/category/{id}/`
+- [Get Category details by ID](category/get-slug.md) : `GET /apps/category/{slug}/`
 - [Create Category](category/post.md) : `POST /apps/category/`
-- [Update Category by ID](category/put.md) : `PUT /apps/category/{id}/`
-- [Partial Update Category by ID](category/patch.md) : `PATCH /apps/category/{id}/`
+- [Update Category by ID](category/put.md) : `PUT /apps/category/{slug}/`
+- [Partial Update Category by ID](category/patch.md) : `PATCH /apps/category/{slug}/`
 
-- [Delete Category by ID](category/delete.md) : `DELETE /apps/category/{id}/`
+- [Delete Category by ID](category/delete.md) : `DELETE /apps/category/{slug}/`
 
 ### Customer API
 
@@ -42,12 +42,12 @@ Customer API Endpoints listed below:
 Product API Endpoints listed below:
 
 - [Get all Products](product/get.md) : `GET /apps/product/`
-- [Get Product details by ID](product/get-id.md) : `GET /apps/product/{id}/`
+- [Get Product details by ID](product/get-slug.md) : `GET /apps/product/{slug}/`
 - [Create Product](product/post.md) : `POST /apps/Product/`
-- [Update Product by ID](product/put.md) : `PUT /apps/product/{id}/`
-- [Partial Update Product by ID](product/patch.md) : `PATCH /apps/product/{id}/`
+- [Update Product by ID](product/put.md) : `PUT /apps/product/{slug}/`
+- [Partial Update Product by ID](product/patch.md) : `PATCH /apps/product/{slug}/`
 
-- [Delete Product by ID](product/delete.md) : `DELETE /apps/product/{id}/`
+- [Delete Product by ID](product/delete.md) : `DELETE /apps/product/{slug}/`
 
 ### Tax API
 
@@ -77,4 +77,19 @@ User API Endpoints listed below:
 - [Delete User by ID](user/delete-id.md) : `DELETE /api/customer/{id}/`
 - [Delete User](user/delete.md) : `DELETE /api/customer/`
 
-[Back](../README.md)
+### Wishlist API
+
+Wishlist API Endpoints listed below:
+
+- [Get Wishlist](wishlist/get.md) : `GET /apps/wishlist/`
+- [Create Wishlist](wishlist/post.md) : `POST /apps/wishlist/`
+
+- [Delete Wishlist](wishlist/delete.md) : `DELETE /apps/wishlist/`
+
+### Cart API
+
+Cart API Endpoints listed below:
+
+- [Get Cart](cart/get.md) : `GET /apps/cart/`
+- [Create Cart](cart/post.md) : `POST /apps/cart/`
+  [Back](../README.md)

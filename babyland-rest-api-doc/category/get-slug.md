@@ -1,10 +1,10 @@
 [Back](../README.md)
 
-# Get Category List
+# Get Category By Slug
 
-Get list of all categories.
+Get detail of a category with given slug.
 
-**URL** : `/apps/category/`
+**URL** : `/apps/category/{slug}/`
 
 **Method** : `GET`
 
@@ -14,7 +14,7 @@ Get list of all categories.
 
 **Code** : `200 OK`
 
-**JSON representation of success response**
+**JSON representation**
 
 ```json
 {
@@ -58,5 +58,19 @@ Get list of all categories.
   "image": "http://dev.babylandworld.com/media/category/images/cover_letter_of.com.np.jpg"
 }
 ```
+
+## Failure Response
+
+**Code** : `404 Not Found`
+
+**JSON representation**
+
+```json
+{
+  "detail": "Not found."
+}
+```
+
+**Reason** : `Category with the given slug doesn't exist.`
 
 [Back](../README.md)

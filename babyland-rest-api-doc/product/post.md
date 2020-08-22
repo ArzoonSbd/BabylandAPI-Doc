@@ -92,56 +92,54 @@ Example :
 
 ```json
 {
-  "id": 107,
-  "url": "http://dev.babylandworld.com/apps/product/107/",
-  "active": true,
-  "slug": "cars-for-kids",
-  "sku": "kids-car-2020",
-  "name": "kids car",
-  "price": 2000.0,
-  "discount_percent": 10.0,
-  "price_unit": "Nepalese Rupee",
-  "short_description": "cars for kids",
-  "description": "this is cars for kids. Your kids wil be happy !!!hshhspii;hdbbcbbhhskjsj;fnnhdjhdkn;djsj",
-  "creation_date": "2020-07-18T17:42:53.729223+02:00",
-  "deliverable": true,
-  "stock_amount": 20.0,
-  "stock_unit": "piece",
-  "weight": "",
-  "weight_unit": "",
-  "height": null,
-  "height_unit": "",
-  "length": null,
-  "length_unit": "",
-  "width": null,
-  "width_unit": "",
-  "tax_type": "http://dev.babylandworld.com/apps/tax/37/",
-  "manufacturer": "tesla",
-  "active_sku": true,
-  "active_short_description": true,
-  "active_description": true,
+  "id": 167,
+  "url": "http://dev.babylandworld.com/apps/product/dell-inspiron-74722670/",
+  "active": false,
+  "slug": "dell-inspiron-74722670",
+  "sku": "null",
+  "name": "Dell Inspiron 7472",
+  "short_description": "DEll",
+  "description": "Dell",
+  "creation_date": "2020-08-21T12:45:14.172472+02:00",
+  "deliverable": false,
+  "stock_amount": 11.0,
+  "stock_unit": "pc",
+  "weight": 0.0,
+  "weight_unit": "null",
+  "height": 0.0,
+  "height_unit": "null",
+  "length": 0.0,
+  "length_unit": "null",
+  "width": 0.0,
+  "width_unit": "null",
+  "tax_type": "http://dev.babylandworld.com/apps/tax/43/",
+  "manufacturer": "Dell",
+  "active_sku": false,
+  "active_short_description": false,
   "active_dimension": false,
   "active_weight": false,
   "specification": {
-    "name": "tesla",
-    "type": "kids",
-    "model": "2020"
+    "specification": {
+      "model": "2020best",
+      "version": "1"
+    },
+    "userSpecification": []
   },
-  "primary_category": "http://dev.babylandworld.com/apps/category/121/",
+  "primary_category": "http://dev.babylandworld.com/apps/category/vehicals/",
   "images": [
     {
-      "id": 88,
-      "product": 107,
-      "name": "cars",
-      "image_file": "http://dev.babylandworld.com/media/products/logo.jpg"
-    },
-    {
-      "id": 89,
-      "product": 107,
-      "name": "me",
-      "image_file": "http://dev.babylandworld.com/media/products/es6.jpeg"
+      "id": 131,
+      "product": 167,
+      "name": "04-1-e1517910598586.jpg",
+      "image_file": "http://dev.babylandworld.com/media/products/04-1-e1517910598586.jpg"
     }
-  ]
+  ],
+  "price": 100000.0,
+  "initial_cost": 165000,
+  "has_discount": false,
+  "discount_percent": 0.0,
+  "final_cost": 165000,
+  "price_unit": "Nepalese Rupee"
 }
 ```
 

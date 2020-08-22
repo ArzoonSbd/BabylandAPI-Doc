@@ -1,8 +1,8 @@
 [Back](../README.md)
 
-# Delete Category By ID
+# Delete Category By Slug
 
-**URL** : `/apps/category/{id}/`
+**URL** : `/apps/category/{slug}/`
 
 **Method** : `DELETE`
 

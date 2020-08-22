@@ -8,7 +8,7 @@ Get detail of a category with given id.
 
 **Method** : `GET`
 
-**Auth required** : NO
+**Auth required** : Yes
 
 ## Success Response
 

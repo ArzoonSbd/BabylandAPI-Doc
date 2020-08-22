@@ -8,7 +8,7 @@ Get detail of a user with given id.
 
 **Method** : `GET`
 
-**Auth required** : NO
+**Auth required** : Yes
 
 ## Success Response
 

@@ -2,9 +2,7 @@
 
 # Delete Wishlist
 
-Customer is only able to delete specific wishlist.
-
-**URL** : `/api/user/`
+**URL** : `/apps/wishlist/`
 
 **Method** : `DELETE`
 
@@ -16,13 +14,13 @@ Customer is only able to delete specific wishlist.
 
 ## Error Response
 
-**Code** : `400 Bad Request`
+**Code** : `404 Not Found`
 
 **Response**:
 
 ```json
 {
-  "detail": "Product to delete is required"
+  "detail": "Not found."
 }
 ```
 
