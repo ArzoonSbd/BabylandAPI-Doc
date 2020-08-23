@@ -14,57 +14,46 @@ Get all customer.
 
 **Code** : `200 OK`
 
-**JSON representation**
+**Response**
 
 ```json
 {
-  "id": "integer",
-  "first_name": "string",
-  "last_name": "string",
-  "date_joined": "string",
-  "is_active": "boolean",
-  "email": "string",
-  "address": {
-    "name*": "string",
-    "addressline": "string",
-    "street*": "string",
-    "city*": "string",
-    "province*": "string",
-    "phone": "string",
-    "country": "string"
-  },
-  "password": "string",
-  "gender": "string",
-  "phone": "string",
-  "avatar": "string",
-  "last_login": "string"
-}
+    "id": 3,
+    "first_name": "Auto - 0oamaOM1",
+    "last_name": "Auto - op0Ds2FD",
+    "date_joined": "2020-08-22T15:34:36.027572+02:00",
+    "is_active": true,
+    "email": "customer@customer.com",
+    "address": {
+        "name": "Auto - mzMfjnm",
+        "addressline": null,
+        "street": "Randy Inlet",
+        "city": "Mikelshire",
+        "province": "4",
+        "phone": null,
+        "country": "Burkina Faso"
+    },
+    "gender": "M",
+    "phone": null,
+    "avatar": "http://dev.babylandworld.com/media/admin/defaultAvatar.png",
+    "last_login": null,
+    "dob": null,
+    "email_verified": true
+    },
 ```
 
-**Content examples**
+## Error Response
+
+**Code** : `401 Unauthorized`
+
+**Reason** : `No authentication token provided in header`
+
+**Response** :
 
 ```json
 {
-"id": 57,
-  "first_name": "Saroj",
-  "last_name": "Gurung",
-  "date_joined": "2020-07-19T14:11:09.487710+02:00",
-  "is_active": true,
-  "email": "grg_prabhu@yahoo.com",
-  "address": {
-    "name": "Prabhu Gurung",
-    "addressline": null,
-    "street": "chhorepatan",
-    "city": "Pokhara",
-    "province": "Province 4 ( प्रदेश नं ४ )",
-    "phone": "",
-    "country": "India"
-  },
-  "gender": "M",
-  "phone": "9846728507",
-  "avatar": "http://dev.babylandworld.com/media/admin/defaultAvatar.png",
-  "last_login": null
-    },
+  "detail": "Authentication credentials were not provided."
+}
 ```
 
 [Back](../README.md)

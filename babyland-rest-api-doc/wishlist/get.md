@@ -14,19 +14,25 @@ Get Wishlist list if login with valid customer credential.
 
 **Code** : `200 OK`
 
-**JSON representation of success response**
-
-```json
-{
-  "products": "Array of strings"
-}
-```
-
-**Content examples**
+**Response**
 
 ```json
 {
   "products": ["http://dev.babylandworld.com/apps/product/remote-car/"]
+}
+```
+
+## Error Response
+
+**Code** : `401 Unauthorized`
+
+**Reason** : `No authentication token provided in header`
+
+**Response** :
+
+```json
+{
+  "detail": "Authentication credentials were not provided."
 }
 ```
 

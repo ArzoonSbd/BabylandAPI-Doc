@@ -8,24 +8,13 @@ Get list of all tax.
 
 **Method** : `GET`
 
-**Auth required** : NO
+**Auth required** : Yes
 
 ## Success Response
 
 **Code** : `200 OK`
 
-**JSON representation**
-
-```json
-{
-  "id": "integer",
-  "url": "string",
-  "name": "string",
-  "percent": "number"
-}
-```
-
-**Content examples**
+**Response**
 
 ```json
 {
@@ -33,6 +22,20 @@ Get list of all tax.
   "url": "http://dev.babylandworld.com/apps/tax/37/",
   "name": "zero tax",
   "percent": 0.0
+}
+```
+
+## Error Response
+
+**Code** : `401 Unauthorized`
+
+**Reason** : `No authentication token provided in header`
+
+**Response** :
+
+```json
+{
+  "detail": "Authentication credentials were not provided."
 }
 ```
 

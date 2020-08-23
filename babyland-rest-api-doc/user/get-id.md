@@ -14,35 +14,16 @@ Get detail of a user with given id.
 
 **Code** : `200 OK`
 
-**JSON representation**
-
-```json
-{
-  "id": "integer",
-  "first_name": "string",
-  "last_name": "string",
-  "date_joined": "string",
-  "is_active": "boolean",
-  "email": "string",
-  "password": "string",
-  "gender": "string",
-  "phone": "string",
-  "avatar": "string",
-  "role": "integer",
-  "last_login": "string"
-}
-```
-
-**Content examples**
+**Response**
 
 ```json
 {
   "id": 45,
-  "first_name": "arjun",
-  "last_name": "subedi",
+  "first_name": "test",
+  "last_name": "user",
   "date_joined": "2020-07-12T17:32:33.831257+02:00",
   "is_active": true,
-  "email": "arjun.eversoft@gmail.com",
+  "email": "test.user@gmail.com",
   "gender": "M",
   "phone": "9806633448",
   "avatar": "/media/admin/defaultAvatar.png",
@@ -50,5 +31,31 @@ Get detail of a user with given id.
   "last_login": "2020-07-13T18:43:55.024820+02:00"
 }
 ```
+
+## Error Response
+
+**Code** : `401 Unauthorized`
+
+**Reason** : `No authentication token provided in header`
+
+**Response** :
+
+```json
+{
+  "detail": "Authentication credentials were not provided."
+}
+```
+
+**Code** : `404 Not Found`
+
+**JSON representation**
+
+```json
+{
+  "detail": "Not found."
+}
+```
+
+**Reason** : `given user ID doesn't exist.`
 
 [Back](../README.md)

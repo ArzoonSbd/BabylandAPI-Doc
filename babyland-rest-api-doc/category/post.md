@@ -15,37 +15,31 @@ To create a category.
 **Code** : `201 Created`
 
 **Response** :
+
 ```json
 {
-    "id": 18,
-    "url": "http://localhost:8000/apps/category/laptop/",
-    "name": "Laptop",
-    "level": 1,
-    "parent": 17,
-    "specification": [
-        {
-            "name": "Ram ",
-            "type": "selection",
-            "default": "4 GB",
-            "options": [
-                "8 GB",
-                "4 GB"
-            ]
-        },
-        {
-            "name": "Processor",
-            "type": "selection",
-            "default": "I3",
-            "options": [
-                "I5",
-                "I3",
-                "I7"
-            ]
-        }
-    ],
-    "children": [],
-    "slug": "laptop",
-    "image": "http://localhost:8000/media/category/defaultImage.png"
+  "id": 18,
+  "url": "http://dev.babylandworld.com/apps/category/laptop/",
+  "name": "Laptop",
+  "level": 1,
+  "parent": 17,
+  "specification": [
+    {
+      "name": "Ram ",
+      "type": "selection",
+      "default": "4 GB",
+      "options": ["8 GB", "4 GB"]
+    },
+    {
+      "name": "Processor",
+      "type": "selection",
+      "default": "I3",
+      "options": ["I5", "I3", "I7"]
+    }
+  ],
+  "children": [],
+  "slug": "laptop",
+  "image": "http://dev.babylandworld.com/media/category/images/cover_letter_of.com.np.jpg"
 }
 ```
 
@@ -59,7 +53,7 @@ To create a category.
 
 ```json
 {
-    "detail": "Authentication credentials were not provided."
+  "detail": "Authentication credentials were not provided."
 }
 ```
 
@@ -71,9 +65,10 @@ To create a category.
 
 ```json
 {
-    "<fieldname>": "[<Validation Error>]"
+  "<fieldname>": "[<Validation Error>]"
 }
 ```
+
 ```json
 Example :
 
@@ -88,11 +83,11 @@ Example :
 
 ```json
 {
-    "name": "String",
-    "level" : "Level_number",
-    "parent" : "Id_number",
-    "specification" : "JSON Object",
-    "image" : "Image File"
+  "name": "String",
+  "level": "Level_number",
+  "parent": "Id_number",
+  "specification": "JSON Object",
+  "image": "Image File"
 }
 ```
 
@@ -100,22 +95,23 @@ Example :
 
 ```json
 {
-    "name": "Laptop",
-    "level" : "1",
-    "parent" : "17",
-    "specification" : [
-        {
-            "name": "Ram ",
-            "type": "selection",
-            "default": "4 GB",
-            "options": ["8 GB", "4 GB"]
-        },{
-            "name": "Processor",
-            "type": "selection",
-            "default": "I3",
-            "options": ["I5", "I3", "I7"]
-        }
-    ]
+  "name": "Laptop",
+  "level": "1",
+  "parent": "17",
+  "specification": [
+    {
+      "name": "Ram ",
+      "type": "selection",
+      "default": "4 GB",
+      "options": ["8 GB", "4 GB"]
+    },
+    {
+      "name": "Processor",
+      "type": "selection",
+      "default": "I3",
+      "options": ["I5", "I3", "I7"]
+    }
+  ]
 }
 ```
 
@@ -125,9 +121,8 @@ Example :
 | ------------------------------------------------------- | ----------- | ---------------------- |
 | name `(required and [ 1 .. 100 ] characters)`           | string      | category name          |
 | level `(required and [ 0 .. 32767 ])`                   | integer     | category level         |
-| parent `(required if level isnot 0)`                    | integer  | parent category        |
+| parent `(required if level isnot 0)`                    | integer     | parent category        |
 | specification `(not null - minimum null JSON required)` | json object | category specification |
-| image | Image file | Image for the category |
-
+| image                                                   | Image file  | Image for the category |
 
 [Back](../README.md)

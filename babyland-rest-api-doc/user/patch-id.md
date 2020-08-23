@@ -14,11 +14,29 @@ Update the partial fields of user by id.
 
 **Code** : `200 OK`
 
+**Response**
+
+```json
+{
+  "id": 45,
+  "first_name": "test",
+  "last_name": "user",
+  "date_joined": "2020-07-12T17:32:33.831257+02:00",
+  "is_active": true,
+  "email": "test.user@gmail.com",
+  "gender": "M",
+  "phone": "9806633448",
+  "avatar": "/media/admin/defaultAvatar.png",
+  "role": 0,
+  "last_login": "2020-07-13T18:43:55.024820+02:00"
+}
+```
+
 ## Error Response
 
 **Code** : `404 Not Found`
 
-**Reason** : `No user found`
+**Reason** : `No user with the id found`
 
 **Response** :
 
@@ -48,22 +66,16 @@ Example :
 }
 ```
 
-**JSON representation**
+**JSON representation of content**
 
 ```json
 {
-  "id": "integer",
   "first_name": "string",
   "last_name": "string",
-  "date_joined": "string",
-  "is_active": "boolean",
   "email": "string",
   "password": "string",
   "gender": "string",
-  "phone": "string",
-  "avatar": "string",
-  "role": "integer",
-  "last_login": "string"
+  "phone": "string"
 }
 ```
 
@@ -71,17 +83,12 @@ Example :
 
 ```json
 {
-  "id": 45,
-  "first_name": "arjun",
-  "last_name": "subedi",
-  "date_joined": "2020-07-12T17:32:33.831257+02:00",
-  "is_active": true,
-  "email": "arjun.eversoft@gmail.com",
+  "first_name": "test",
+  "last_name": "user",
+  "email": "test.user@gmail.com",
   "gender": "M",
   "phone": "9806633448",
-  "avatar": "/media/admin/defaultAvatar.png",
-  "role": 0,
-  "last_login": "2020-07-13T18:43:55.024820+02:00"
+  "role": 0
 }
 ```
 

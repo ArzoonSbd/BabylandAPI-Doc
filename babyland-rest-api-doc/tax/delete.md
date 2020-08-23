@@ -24,4 +24,16 @@
 }
 ```
 
+**Code** : `401 Unauthorized`
+
+**Reason** : `No authentication token provided in header`
+
+**Response** :
+
+```json
+{
+  "detail": "Authentication credentials were not provided."
+}
+```
+
 [Back](../README.md)

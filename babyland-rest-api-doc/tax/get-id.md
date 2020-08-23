@@ -14,18 +14,7 @@ Get detail of a tax with given id.
 
 **Code** : `200 OK`
 
-**JSON representation**
-
-```json
-{
-  "id": "integer",
-  "url": "string",
-  "name": "string",
-  "percent": "number"
-}
-```
-
-**Content examples**
+**Response**
 
 ```json
 {
@@ -36,7 +25,19 @@ Get detail of a tax with given id.
 }
 ```
 
-## Failure Response
+## Error Response
+
+**Code** : `401 Unauthorized`
+
+**Reason** : `No authentication token provided in header`
+
+**Response** :
+
+```json
+{
+  "detail": "Authentication credentials were not provided."
+}
+```
 
 **Code** : `404 Not Found`
 

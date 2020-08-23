@@ -8,27 +8,13 @@ Get detail of a category with given slug.
 
 **Method** : `GET`
 
-**Auth required** : NO
+**Auth required** : Yes
 
 ## Success Response
 
 **Code** : `200 OK`
 
-**JSON representation**
-
-```json
-{
-  "id": "integer",
-  "url": "string",
-  "name": "string",
-  "level": "integer",
-  "parent": "string",
-  "specification": "object",
-  "products": "Array of strings"
-}
-```
-
-**Content examples**
+**Response**
 
 ```json
 {
@@ -59,7 +45,19 @@ Get detail of a category with given slug.
 }
 ```
 
-## Failure Response
+## Error Response
+
+**Code** : `401 Unauthorized`
+
+**Reason** : `No authentication token provided in header`
+
+**Response** :
+
+```json
+{
+  "detail": "Authentication credentials were not provided."
+}
+```
 
 **Code** : `404 Not Found`
 

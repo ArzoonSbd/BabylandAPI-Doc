@@ -14,15 +14,7 @@ Get cart details list if login with valid customer credential. If there is no an
 
 **Code** : `200 OK`
 
-**JSON representation of success response**
-
-```json
-{
-  "products": "Array of strings"
-}
-```
-
-**Content examples**
+**Response**
 
 ```json
 {
@@ -34,14 +26,28 @@ Get cart details list if login with valid customer credential. If there is no an
       "unit_cost": 1000.0,
       "discount_percent": 10.0,
       "unit_final_cost": 900.0,
-      "quantity": 5,
-      "total_cost": 4500.0,
-      "total_saved": 500.0
+      "quantity": 1,
+      "total_cost": 900.0,
+      "total_saved": 100.0
     }
   ],
-  "discounted_amount": 500.0,
+  "discounted_amount": 100.0,
   "tax_amount": 0.0,
-  "total": 4500.0
+  "total": 900.0
+}
+```
+
+## Error Response
+
+**Code** : `401 Unauthorized`
+
+**Reason** : `No authentication token provided in header`
+
+**Response** :
+
+```json
+{
+  "detail": "Authentication credentials were not provided."
 }
 ```
 

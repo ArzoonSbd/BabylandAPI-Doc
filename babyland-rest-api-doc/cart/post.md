@@ -2,7 +2,7 @@
 
 # Add to Cart
 
-To add products inside cart valid customer login is reguired and it accept bulk data in an array.
+To add products inside cart valid customer login is reguired and it accept bulk data in an array format.
 
 **URL** : `/apps/cart/`
 
@@ -14,36 +14,7 @@ To add products inside cart valid customer login is reguired and it accept bulk 
 
 **Code** : `201 Created`
 
-## Error Response
-
-**Code** : `400 Bad Request`
-
-**Reason** : `If invalid product id is added`
-
-**Response** :
-
-```json
-{
-    "detail": "Product not found"
-}
-
-Example :
-
-{
-   "products":["120"]
-}
-```
-
-**JSON representation**
-
-```json
-{
-  "id": "integer",
-  "quantity": "integer"
-}
-```
-
-**Content examples**
+**Response**
 
 ```json
 {
@@ -66,10 +37,57 @@ Example :
 }
 ```
 
+## Error Response
+
+**Code** : `401 Unauthorized`
+
+**Reason** : `No authentication token provided in header`
+
+**Response** :
+
+```json
+{
+  "detail": "Authentication credentials were not provided."
+}
+```
+
+**Code** : `400 Bad Request`
+
+**Reason** : `If invalid product id is added`
+
+**Response** :
+
+```json
+{
+  "detail": "Product not found"
+}
+```
+
+**JSON representation of Content**
+
+```json
+{
+  "products": [
+    {
+      "id": "integer",
+      "quantity": "integer"
+    }
+  ]
+}
+```
+
+**Content examples**
+
+```json
+{
+  "products": [{ "id": "165", "quantity": "10" }]
+}
+```
+
 **Parameters**
 | Field | Type | Description |
 | ------------------------------------------------------- | ----------- | ---------------------- |
 | id `(required)` | integer | valid product id in an array format|
-| quantity`(optional)` | integer | products quantity|
+| quantity | integer | products quantity|
 
 [Back](../README.md)

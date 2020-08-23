@@ -14,6 +14,16 @@ The post method api is used to add wishlist with valid customer login. To create
 
 **Code** : `201 Created`
 
+**Response**
+
+```json
+{
+  "products": [
+    "http://dev.babylandworld.com/apps/product/incredible-steel-mouse/"
+  ]
+}
+```
+
 ## Error Response
 
 **Code** : `400 Bad Request`
@@ -24,21 +34,27 @@ The post method api is used to add wishlist with valid customer login. To create
 
 ```json
 {
-    "detail": "Product not found"
-}
-
-Example :
-
-{
-   "products":["120"]
+  "detail": "Product not found"
 }
 ```
 
-**JSON representation**
+**Code** : `401 Unauthorized`
+
+**Reason** : `No authentication token provided in header`
+
+**Response** :
 
 ```json
 {
-  "product_id": "integer"
+  "detail": "Authentication credentials were not provided."
+}
+```
+
+**JSON representation of content**
+
+```json
+{
+  "product": [{ "id": "integer" }]
 }
 ```
 
@@ -46,7 +62,7 @@ Example :
 
 ```json
 {
-  "products": ["17", "19"]
+  "products": ["1"]
 }
 ```
 

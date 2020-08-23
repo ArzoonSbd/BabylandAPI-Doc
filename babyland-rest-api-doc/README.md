@@ -16,12 +16,12 @@ Autorization API Endpoints listed below:
 Category API Endpoints listed below:
 
 - [Get all Category](category/get.md) : `GET /apps/category/`
-- [Get Category details by ID](category/get-slug.md) : `GET /apps/category/{slug}/`
+- [Get Category details by Slug](category/get-slug.md) : `GET /apps/category/{slug}/`
 - [Create Category](category/post.md) : `POST /apps/category/`
-- [Update Category by ID](category/put.md) : `PUT /apps/category/{slug}/`
-- [Partial Update Category by ID](category/patch.md) : `PATCH /apps/category/{slug}/`
+- [Update Category by Slug](category/put.md) : `PUT /apps/category/{slug}/`
+- [Partial Update Category by Slug](category/patch.md) : `PATCH /apps/category/{slug}/`
 
-- [Delete Category by ID](category/delete.md) : `DELETE /apps/category/{slug}/`
+- [Delete Category by Slug](category/delete.md) : `DELETE /apps/category/{slug}/`
 
 ### Customer API
 
@@ -42,12 +42,12 @@ Customer API Endpoints listed below:
 Product API Endpoints listed below:
 
 - [Get all Products](product/get.md) : `GET /apps/product/`
-- [Get Product details by ID](product/get-slug.md) : `GET /apps/product/{slug}/`
+- [Get Product details by Slug](product/get-slug.md) : `GET /apps/product/{slug}/`
 - [Create Product](product/post.md) : `POST /apps/Product/`
-- [Update Product by ID](product/put.md) : `PUT /apps/product/{slug}/`
-- [Partial Update Product by ID](product/patch.md) : `PATCH /apps/product/{slug}/`
+- [Update Product by Slug](product/put.md) : `PUT /apps/product/{slug}/`
+- [Partial Update Product by Slug](product/patch.md) : `PATCH /apps/product/{slug}/`
 
-- [Delete Product by ID](product/delete.md) : `DELETE /apps/product/{slug}/`
+- [Delete Product by Slug](product/delete.md) : `DELETE /apps/product/{slug}/`
 
 ### Tax API
 

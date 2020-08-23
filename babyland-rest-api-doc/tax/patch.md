@@ -14,17 +14,28 @@ Update the partial fields of tax with given id.
 
 **Code** : `200 OK`
 
+**Content examples**
+
+```json
+{
+  "id": 37,
+  "url": "http://dev.babylandworld.com/apps/tax/37/",
+  "name": "zero tax",
+  "percent": 20.0
+}
+```
+
 ## Error Response
 
-**Code** : `404 Not Found`
+**Code** : `401 Unauthorized`
 
-**Reason** : `No tax with the id found`
+**Reason** : `No authentication token provided in header`
 
 **Response** :
 
 ```json
 {
-  "detail": "Not found."
+  "detail": "Authentication credentials were not provided."
 }
 ```
 
@@ -43,30 +54,17 @@ Example :
 
 {
     "name": [
-        "Ensure this field has no more than 100 characters."
+        "Ensure this field has no more than 255 characters."
     ]
 }
 ```
 
-**JSON representation**
+**JSON representation of content**
 
 ```json
 {
-  "id": "integer",
-  "url": "string",
   "name": "string",
   "percent": "number"
-}
-```
-
-**Content examples**
-
-```json
-{
-  "id": 37,
-  "url": "http://dev.babylandworld.com/apps/tax/37/",
-  "name": "zero tax",
-  "percent": 0.0
 }
 ```
 

@@ -14,6 +14,48 @@ Update the partial fields of product with given slug.
 
 **Code** : `200 OK`
 
+**Response** :
+
+```json
+{
+  "id": 2,
+  "url": "http://dev.babylandworld.com/apps/product/handmade-soft-car/",
+  "active": false,
+  "slug": "handmade-soft-car",
+  "sku": "Auto - mCkauKE2w4biXgM",
+  "name": "Handmade Soft Car",
+  "short_description": "Auto - 5J70mHij",
+  "description": "Auto - O4MR1oRZ6XsaStx",
+  "creation_date": "2020-08-23T13:41:08.278095+02:00",
+  "deliverable": false,
+  "stock_amount": 1.0,
+  "stock_unit": "70",
+  "weight": null,
+  "weight_unit": "",
+  "height": 70.0,
+  "height_unit": "",
+  "length": null,
+  "length_unit": "",
+  "width": null,
+  "width_unit": "",
+  "tax_type": null,
+  "manufacturer": "France",
+  "active_sku": false,
+  "active_short_description": false,
+  "active_dimension": false,
+  "active_weight": false,
+  "specification": {},
+  "primary_category": "http://dev.babylandworld.com/apps/category/cheese/",
+  "images": [],
+  "price": 445.41,
+  "initial_cost": 445,
+  "has_discount": true,
+  "discount_percent": 70.0,
+  "final_cost": 133,
+  "price_unit": "Nepalese Rupee"
+}
+```
+
 ## Error Response
 
 **Code** : `404 Not Found`
@@ -48,26 +90,15 @@ Example :
 }
 ```
 
-**JSON representation**
+**JSON representation of content**
 
 ```json
 {
-  "id": "integer",
-  "url": "string",
-  "active": "boolean",
-  "slug": "string",
-  "sku": "string",
   "name": "string",
   "price": "number",
   "discount_percent": "number",
-  "price_unit": "string",
   "short_description": "string",
   "description": "string",
-  "for_sale": "boolean",
-  "for_sale_percent": "number",
-  "for_sale_price": "number",
-  "creation_date": "string",
-  "deliverable": "boolean",
   "stock_amount": "number",
   "stock_unit": "string",
   "weight": "number",
@@ -80,13 +111,9 @@ Example :
   "width_unit": "string",
   "tax_type": "string",
   "manufacturer": "string",
-  "active_sku": "boolean",
-  "active_short_description": "boolean",
-  "active_description": "boolean",
-  "active_dimension": "boolean",
+  "active_weight": "boolean",
   "specification": "object",
-  "primary_category": "string",
-  "images": "array of objects"
+  "primary_category": "string"
 }
 ```
 
@@ -94,54 +121,20 @@ Example :
 
 ```json
 {
-  "id": 167,
-  "url": "http://dev.babylandworld.com/apps/product/dell-inspiron-74722670/",
-  "active": false,
-  "slug": "dell-inspiron-74722670",
-  "sku": "null",
-  "name": "Dell Inspiron 7472",
-  "short_description": "DEll",
-  "description": "Dell",
-  "creation_date": "2020-08-21T12:45:14.172472+02:00",
-  "deliverable": false,
-  "stock_amount": 11.0,
-  "stock_unit": "pc",
-  "weight": 0.0,
-  "weight_unit": "null",
-  "height": 0.0,
-  "height_unit": "null",
-  "length": 0.0,
-  "length_unit": "null",
-  "width": 0.0,
-  "width_unit": "null",
-  "tax_type": "http://dev.babylandworld.com/apps/tax/43/",
-  "manufacturer": "Dell",
-  "active_sku": false,
-  "active_short_description": false,
-  "active_dimension": false,
-  "active_weight": false,
-  "specification": {
-    "specification": {
-      "model": "2020best",
-      "version": "1"
-    },
-    "userSpecification": []
-  },
-  "primary_category": "http://dev.babylandworld.com/apps/category/vehicals/",
-  "images": [
-    {
-      "id": 131,
-      "product": 167,
-      "name": "04-1-e1517910598586.jpg",
-      "image_file": "http://dev.babylandworld.com/media/products/04-1-e1517910598586.jpg"
-    }
-  ],
-  "price": 100000.0,
-  "initial_cost": 165000,
-  "has_discount": false,
-  "discount_percent": 0.0,
-  "final_cost": 165000,
-  "price_unit": "Nepalese Rupee"
+  "slug": "handmade-soft-car",
+  "sku": "Auto - mCkauKE2w4biXgM",
+  "name": "Handmade Soft Car",
+  "short_description": "Auto - 5J70mHij",
+  "description": "Auto - O4MR1oRZ6XsaStx",
+  "stock_amount": 1.0,
+  "stock_unit": "70",
+  "height": 70.0,
+  "manufacturer": "France",
+  "primary_category": "http://dev.babylandworld.com/apps/category/cheese/",
+  "price": 445.41,
+  "initial_cost": 445,
+  "has_discount": true,
+  "discount_percent": 70.0
 }
 ```
 

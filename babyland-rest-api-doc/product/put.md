@@ -14,6 +14,48 @@ Change whole content of a product with given slug.
 
 **Code** : `200 OK`
 
+**Response** :
+
+```json
+{
+  "id": 2,
+  "url": "http://dev.babylandworld.com/apps/product/handmade-soft-car/",
+  "active": false,
+  "slug": "handmade-soft-car",
+  "sku": "Auto - mCkauKE2w4biXgM",
+  "name": "Handmade Soft Car",
+  "short_description": "Auto - 5J70mHij",
+  "description": "Auto - O4MR1oRZ6XsaStx",
+  "creation_date": "2020-08-23T13:41:08.278095+02:00",
+  "deliverable": false,
+  "stock_amount": 1.0,
+  "stock_unit": "70",
+  "weight": null,
+  "weight_unit": "",
+  "height": 70.0,
+  "height_unit": "",
+  "length": null,
+  "length_unit": "",
+  "width": null,
+  "width_unit": "",
+  "tax_type": null,
+  "manufacturer": "France",
+  "active_sku": false,
+  "active_short_description": false,
+  "active_dimension": false,
+  "active_weight": false,
+  "specification": {},
+  "primary_category": "http://dev.babylandworld.com/apps/category/cheese/",
+  "images": [],
+  "price": 445.41,
+  "initial_cost": 445,
+  "has_discount": true,
+  "discount_percent": 70.0,
+  "final_cost": 133,
+  "price_unit": "Nepalese Rupee"
+}
+```
+
 ## Error Response
 
 **Code** : `404 Not Found`
@@ -48,11 +90,50 @@ Example :
 }
 ```
 
-**JSON representation**
+**JSON representation of content**
 
 ```json
 {
-  "price_unit": "Nepalese Rupee"
+  "name": "string",
+  "price": "number",
+  "discount_percent": "number",
+  "short_description": "string",
+  "description": "string",
+  "stock_amount": "number",
+  "stock_unit": "string",
+  "weight": "number",
+  "weight_unit": "string",
+  "height": "number",
+  "height_unit": "string",
+  "length": "number",
+  "length_unit": "string",
+  "width": "number",
+  "width_unit": "string",
+  "tax_type": "string",
+  "manufacturer": "string",
+  "active_weight": "boolean",
+  "specification": "object",
+  "primary_category": "string"
+}
+```
+
+**Content examples**
+
+```json
+{
+  "slug": "handmade-soft-car",
+  "sku": "Auto - mCkauKE2w4biXgM",
+  "name": "Handmade Soft Car",
+  "short_description": "Auto - 5J70mHij",
+  "description": "Auto - O4MR1oRZ6XsaStx",
+  "stock_amount": 1.0,
+  "stock_unit": "70",
+  "height": 70.0,
+  "manufacturer": "France",
+  "primary_category": "http://dev.babylandworld.com/apps/category/cheese/",
+  "price": 445.41,
+  "initial_cost": 445,
+  "discount_percent": 70.0
 }
 ```
 

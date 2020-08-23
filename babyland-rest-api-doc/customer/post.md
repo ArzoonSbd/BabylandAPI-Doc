@@ -14,11 +14,39 @@ To create a customer.
 
 **Code** : `201 Created`
 
+**Response**
+
+```json
+{
+  "id": 3,
+  "first_name": "Auto - 0oamaOM1",
+  "last_name": "Auto - op0Ds2FD",
+  "date_joined": "2020-08-22T15:34:36.027572+02:00",
+  "is_active": true,
+  "email": "customer@customer.com",
+  "address": {
+    "name": "Auto - mzMfjnm",
+    "addressline": null,
+    "street": "Randy Inlet",
+    "city": "Mikelshire",
+    "province": "4",
+    "phone": null,
+    "country": "Burkina Faso"
+  },
+  "gender": "M",
+  "phone": null,
+  "avatar": "http://dev.babylandworld.com/media/admin/defaultAvatar.png",
+  "last_login": null,
+  "dob": null,
+  "email_verified": true
+}
+```
+
 ## Error Response
 
 **Code** : `404 Not Found`
 
-**Reason** : `No customer with the id found`
+**Reason** : `No customer found`
 
 **Response** :
 
@@ -48,15 +76,12 @@ Example :
 }
 ```
 
-**JSON representation**
+**JSON representation of Content**
 
 ```json
 {
-  "id": "integer",
   "first_name": "string",
   "last_name": "string",
-  "date_joined": "string",
-  "is_active": "boolean",
   "email": "string",
   "address": {
     "name*": "string",
@@ -69,9 +94,7 @@ Example :
   },
   "password": "string",
   "gender": "string",
-  "phone": "string",
-  "avatar": "string",
-  "last_login": "string"
+  "phone": "string"
 }
 ```
 
@@ -79,25 +102,18 @@ Example :
 
 ```json
 {
-  "id": 57,
-  "first_name": "Saroj",
-  "last_name": "Gurung",
-  "date_joined": "2020-07-19T14:11:09.487710+02:00",
-  "is_active": true,
-  "email": "grg_prabhu@yahoo.com",
+  "first_name": "Auto - 0oamaOM1",
+  "last_name": "Auto - op0Ds2FD",
+  "email": "test@customer.com",
   "address": {
-    "name": "Prabhu Gurung",
-    "addressline": null,
-    "street": "chhorepatan",
-    "city": "Pokhara",
-    "province": "Province 4 ( प्रदेश नं ४ )",
-    "phone": "",
-    "country": "India"
+    "name": "Auto - mzMfjnm",
+    "street": "Randy Inlet",
+    "city": "Mikelshire",
+    "province": "4",
+    "country": "Burkina Faso"
   },
-  "gender": "M",
-  "phone": "9846728507",
-  "avatar": "http://dev.babylandworld.com/media/admin/defaultAvatar.png",
-  "last_login": null
+  "password": "tst@1234",
+  "gender": "M"
 }
 ```
 
@@ -110,6 +126,7 @@ Example :
 | is_active `(Default: true)` | boolean | customer status |
 | email `(required and unique)`| string | customer email |
 | address\*\* `(required)` | JSON object | customer address |
+| password `(required)` | string | customer password |
 | gender `(Enum: "M" "F" "O" "N")`| string | customer gender |
 | phone `(<= 15 characters and Nullable)` | string | customer phone number |
 
@@ -123,5 +140,4 @@ Example :
 | province `(max 50 characters)` | string | customer province name |
 | phone `(<= 15 characters and Nullable)` | string | customer phone number |
 | country `(max 50 characters and default value is Nepal)` | string | customer country name |
-
 [Back](../README.md)

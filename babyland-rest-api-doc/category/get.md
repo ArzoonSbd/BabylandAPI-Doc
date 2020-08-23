@@ -8,27 +8,13 @@ Get list of all categories.
 
 **Method** : `GET`
 
-**Auth required** : NO
+**Auth required** : Yes
 
 ## Success Response
 
 **Code** : `200 OK`
 
-**JSON representation of success response**
-
-```json
-{
-  "id": "integer",
-  "url": "string",
-  "name": "string",
-  "level": "integer",
-  "parent": "string",
-  "specification": "object",
-  "products": "Array of strings"
-}
-```
-
-**Content examples**
+**Response**
 
 ```json
 {
@@ -56,6 +42,20 @@ Get list of all categories.
   "children": [193, 194],
   "slug": "computer",
   "image": "http://dev.babylandworld.com/media/category/images/cover_letter_of.com.np.jpg"
+}
+```
+
+## Error Response
+
+**Code** : `401 Unauthorized`
+
+**Reason** : `No authentication token provided in header`
+
+**Response** :
+
+```json
+{
+  "detail": "Authentication credentials were not provided."
 }
 ```
 
