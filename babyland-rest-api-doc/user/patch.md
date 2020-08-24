@@ -73,8 +73,6 @@ Example :
   "first_name": "string",
   "last_name": "string",
   "email": "string",
-  "password": "string",
-  "gender": "string",
   "phone": "string"
 }
 ```
@@ -85,10 +83,7 @@ Example :
 {
   "first_name": "test",
   "last_name": "user",
-  "email": "test.user@gmail.com",
-  "gender": "M",
-  "phone": "9806633448",
-  "role": 0
+  "phone": "9806633448"
 }
 ```
 

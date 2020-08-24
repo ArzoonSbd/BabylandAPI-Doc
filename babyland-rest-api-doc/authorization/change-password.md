@@ -1,6 +1,8 @@
 [Back](../README.md)
 
-# Update User Password
+# Change Password
+
+Only valid user and customer able to change password.
 
 **URL** : `/api/user/password/`
 

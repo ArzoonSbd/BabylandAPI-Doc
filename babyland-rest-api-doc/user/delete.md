@@ -1,8 +1,8 @@
 [Back](../README.md)
 
-# Delete Wishlist
+# Delete User
 
-Customer is only able to delete specific wishlist.
+Delete Current user.
 
 **URL** : `/api/user/`
 
@@ -15,16 +15,6 @@ Customer is only able to delete specific wishlist.
 **Code** : `204`
 
 ## Error Response
-
-**Code** : `400 Bad Request`
-
-**Response**:
-
-```json
-{
-  "detail": "Product to delete is required"
-}
-```
 
 **Code** : `401 Unauthorized`
 

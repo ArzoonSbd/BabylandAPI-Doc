@@ -10,6 +10,7 @@ Autorization API Endpoints listed below:
 - [Email Activation](authorization/account-activate.md) : `POST /api/user/activate/`
 - [Forget Password](authorization/forget-password.md) : `POST /api/user/forget/`
 - [Reset Password](authorization/reset-password.md) : `POST /api/user/reset/`
+- [Change Password](authorization/change-password.md) : `PUT /api/user/password/`
 
 ### Category API
 
@@ -71,11 +72,10 @@ User API Endpoints listed below:
 
 - [Create User](user/post.md) : `POST /api/user/`
 - [Update User details](user/put-id.md) : `PUT /api/user/{id}/`
-- [Update Password](user/put.md) : `PUT /api/user/password/`
 - [Partial Update User details](user/patch.md) : `PATCH /api/user/`
 - [Partial Update User details by ID](user/patch-id.md) : `PUT /api/user/{id}/`
-- [Delete User by ID](user/delete-id.md) : `DELETE /api/customer/{id}/`
-- [Delete User](user/delete.md) : `DELETE /api/customer/`
+- [Delete User by ID](user/delete-id.md) : `DELETE /api/user/{id}/`
+- [Delete User](user/delete.md) : `DELETE /api/user/`
 
 ### Wishlist API
 
