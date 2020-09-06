@@ -93,3 +93,52 @@ Cart API Endpoints listed below:
 - [Get Cart](cart/get.md) : `GET /apps/cart/`
 - [Create Cart](cart/post.md) : `POST /apps/cart/`
   [Back](../README.md)
+
+### Delivery Cost API
+
+Delivery Cost API Endpoints listed below:
+
+- [Get all Delivery Cost](delivery-cost/get.md) : `GET /apps/delivery-cost/`
+- [Get Delivery Cost by ID](delivery-cost/get-id.md) : `GET /apps/delivery-cost/{id}/`
+- [Create Delivery Cost](delivery-cost/post.md) : `POST /apps/delivery-cost/`
+- [Update Delivery Cost by ID](delivery-cost/put.md) : `PUT /apps/delivery-cost/{id}/`
+- [Partial Update Delivery Cost by ID](delivery-cost/patch.md) : `PATCH /apps/delivery-cost/{id}/`
+
+- [Delete Delivery Cost by ID](delivery-cost/delete.md) : `DELETE /apps/delivery-cost/{id}/`
+
+### Districts API
+
+Districts API Endpoints listed below:
+
+- [Get all Districts list](districts/get.md) : `GET /apps/info/districts/`
+
+### Shipping Cost API
+
+Shipping Cost API Endpoints listed below:
+
+- [Create Shipping Cost](shipping-cost/post.md) : `POST /apps/my-shipping-cost/`
+
+### Order API
+
+Order API Endpoints listed below:
+
+- [Get all Order](order/get.md) : `GET /apps/order/all/`
+- [Get Order by ID](order/get-id.md) : `GET /apps/order/{id}/`
+- [Create Order](order/post.md) : `POST /apps/order/`
+- [Update Order by ID](order/put.md) : `PUT /apps/order/{id}/`
+- [Update Order from Cart](order/put-cart.md) : `PUT /apps/order/{id}/cart/`
+- [Partial Update Order by ID](order/patch.md) : `PATCH /apps/order/{id}/`
+
+- [Partial Update Order from cart](order/patch-cart.md) : `PATCH /apps/order/{id}/cart/`
+
+### Collection API
+
+Collection API Endpoints listed below:
+
+- [Get all collection](collection/get.md) : `GET /apps/collection/`
+- [Get collection by slug](collection/get-slug.md) : `GET /apps/collection/{slug}/`
+- [Create collection ](collection/post.md) : `POST /apps/collection/`
+- [Update collection by slug](collection/put.md) : `PUT /apps/collection/{slug}/`
+- [Partial Update collection by slug](collection/patch.md) : `PATCH /apps/collection/{slug}/`
+
+- [Delete collection by slug](collection/delete.md) : `DELETE /apps/collection/{slug}/`

@@ -58,18 +58,6 @@ To create a product.
 
 ## Error Response
 
-**Code** : `404 Not Found`
-
-**Reason** : `No product with the id found`
-
-**Response** :
-
-```json
-{
-  "detail": "Not found."
-}
-```
-
 **Code** : `400 Bad Request`
 
 **Reason** : `Field validation error`

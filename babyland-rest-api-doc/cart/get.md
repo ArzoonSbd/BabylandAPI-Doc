@@ -19,21 +19,27 @@ Get cart details list if login with valid customer credential. If there is no an
 ```json
 {
   "no_of_items": 1,
+  "applied_delivery_class": 0,
   "products": [
     {
-      "product_id": 165,
-      "product": "http://dev.babylandworld.com/apps/product/remote-car/",
-      "unit_cost": 1000.0,
-      "discount_percent": 10.0,
-      "unit_final_cost": 900.0,
-      "quantity": 1,
-      "total_cost": 900.0,
-      "total_saved": 100.0
+      "product_id": 187,
+      "product": "http://dev.babylandworld.com/apps/product/electronic-bike/",
+      "product_name": "electronic bike",
+      "product_slug": "electronic-bike",
+      "product_image": "http://dev.babylandworld.com/media/products/images/sc600x600.jpg",
+      "product_stock_amount": 65,
+      "product_price_unit": "Nrs.",
+      "unit_cost": 770.0,
+      "discount_percent": 5.0,
+      "unit_final_cost": 731.5,
+      "quantity": 5,
+      "total_cost": 3657.5,
+      "total_saved": 192.5
     }
   ],
-  "discounted_amount": 100.0,
-  "tax_amount": 0.0,
-  "total": 900.0
+  "discounted_amount": 192.5,
+  "tax_amount": 332.5,
+  "total": 3657.5
 }
 ```
 

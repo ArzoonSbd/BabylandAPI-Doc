@@ -1,10 +1,10 @@
 [Back](../README.md)
 
-# Create Wishlist
+# Create Shipping Cost
 
-The post method api is used to add wishlist with valid customer login. To create new wishlist user should send valid product id in response body with array format.
+This API is used to create shipping cost by district and only customer token is valid.
 
-**URL** : `/apps/wishlist/`
+**URL** : `/apps/my-shipping-cost/`
 
 **Method** : `POST`
 
@@ -12,15 +12,13 @@ The post method api is used to add wishlist with valid customer login. To create
 
 ## Success Response
 
-**Code** : `201 Created`
+**Code** : `200 OK`
 
-**Response**
+**Response** :
 
 ```json
 {
-  "products": [
-    "http://dev.babylandworld.com/apps/product/incredible-steel-mouse/"
-  ]
+  "shipping_cost": "500.0"
 }
 ```
 
@@ -28,13 +26,13 @@ The post method api is used to add wishlist with valid customer login. To create
 
 **Code** : `400 Bad Request`
 
-**Reason** : `If invalid product id is added`
+**Reason** : `If district is not provided`
 
 **Response** :
 
 ```json
 {
-  "detail": "Product not found"
+  "detail": "Please provide district"
 }
 ```
 
@@ -54,7 +52,7 @@ The post method api is used to add wishlist with valid customer login. To create
 
 ```json
 {
-  "product": { "id": "integer" }
+  "district": "string"
 }
 ```
 
@@ -62,13 +60,13 @@ The post method api is used to add wishlist with valid customer login. To create
 
 ```json
 {
-  "products": ["1"]
+  "district": "Kathmandu"
 }
 ```
 
 **Parameters**
 | Field | Type | Description |
 | ------------------------------------------------------- | ----------- | ---------------------- |
-| product_id `(required)` | integer | valid product id to add in wishlist |
+| district `(required)` | string | district name from 77 list |
 
 [Back](../README.md)
