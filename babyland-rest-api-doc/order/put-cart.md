@@ -118,13 +118,14 @@ Example :
 ```
 
 **Parameters**
-| Field | Type | Description |
-| ------------------------------------------------------- | ----------- | ---------------------- |
-| product | string | product url |
-| p_name | string | product name |
-| p_short_description | string | product short description|
-| p_price_unit | string | product price unit |
-| p_delivery_class| integer | product delivery class |
-| quantity | integer | product quantity|
+
+| Field               | Type    | Description               |
+| ------------------- | ------- | ------------------------- |
+| product             | string  | product url               |
+| p_name              | string  | product name              |
+| p_short_description | string  | product short description |
+| p_price_unit        | string  | product price unit        |
+| p_delivery_class    | integer | product delivery class    |
+| quantity            | integer | product quantity          |
 
 [Back](../README.md)

@@ -83,9 +83,10 @@ Example :
 ```
 
 **Parameters**
-| Field | Type | Description |
-| ------------------------------------------------------- | ----------- | ---------------------- |
-| price_class_a `(required)` | number | class a item category price|
-| price_class_b `(required)` | number | class b item category price |
-| price_class_c `(required)`| number | class c item category price |
-| district_name `(required and enum)` | string | 77 district name |
+
+| Field                               | Type   | Description                 |
+| ----------------------------------- | ------ | --------------------------- |
+| price_class_a `(required)`          | number | class a item category price |
+| price_class_b `(required)`          | number | class b item category price |
+| price_class_c `(required)`          | number | class c item category price |
+| district_name `(required and enum)` | string | 77 district name            |

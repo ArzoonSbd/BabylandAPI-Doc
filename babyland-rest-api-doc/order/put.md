@@ -175,30 +175,31 @@ Example :
 ```
 
 **Parameters**
-| Field | Type | Description |
-| ------------------------------------------------------- | ----------- | ---------------------- |
-| final_cost `(read only)` | number | product final cost |
-| payment_status `(Enum:[0,1])` | integer | order payment status |
-| payment_method `(Enum:[0])` | string | order payment method|
-| order_status `( Enum:[0,1,2,3,4])` | integer | order status |
-| delivery_status `(Enum:[0,1,2])`| integer | order delivery status |
-| code `(read only)`| string | order code|
-| name `(required and maxlength:100)`| string | customer name |
-| addressline `( optional and [1 .. 100] characters)` | string | customer addressline |
-| street `(required and [1 .. 250] characters)` | string | customer street |
-| city `(required and [1..50] characters)` | string | customer city address |
-| district `(required and Enum)`| string | all 77 district |
-| phone `(maxlength:20)`| string | customer phone |
-| email `(required and [ 1 .. 255 ] characters)` | string | email address |
-| country | string | country name |
-| order_date `(default date now)`| date-time | order date|
-| shipping_date `(default date now)`| date-time | shipping date|
-| delivery_date `(default date now)`| date-time | delivery date|
-| payment_date `(default date now)`| date-time | payment date|
-| delivery_class| integer | delivery class |
-| shipping_cost| number | shipping cost |
-| c_email `(maxlength:254 character)`| string | customer email |
-| c_name `(maxlength:180 character)`| string | customer name |
-| cart `(required)`| integer | cart |
+
+| Field                                               | Type      | Description           |
+| --------------------------------------------------- | --------- | --------------------- |
+| final_cost `(read only)`                            | number    | product final cost    |
+| payment_status `(Enum:[0,1])`                       | integer   | order payment status  |
+| payment_method `(Enum:[0])`                         | string    | order payment method  |
+| order_status `( Enum:[0,1,2,3,4])`                  | integer   | order status          |
+| delivery_status `(Enum:[0,1,2])`                    | integer   | order delivery status |
+| code `(read only)`                                  | string    | order code            |
+| name `(required and maxlength:100)`                 | string    | customer name         |
+| addressline `( optional and [1 .. 100] characters)` | string    | customer addressline  |
+| street `(required and [1 .. 250] characters)`       | string    | customer street       |
+| city `(required and [1..50] characters)`            | string    | customer city address |
+| district `(required and Enum)`                      | string    | all 77 district       |
+| phone `(maxlength:20)`                              | string    | customer phone        |
+| email `(required and [ 1 .. 255 ] characters)`      | string    | email address         |
+| country                                             | string    | country name          |
+| order_date `(default date now)`                     | date-time | order date            |
+| shipping_date `(default date now)`                  | date-time | shipping date         |
+| delivery_date `(default date now)`                  | date-time | delivery date         |
+| payment_date `(default date now)`                   | date-time | payment date          |
+| delivery_class                                      | integer   | delivery class        |
+| shipping_cost                                       | number    | shipping cost         |
+| c_email `(maxlength:254 character)`                 | string    | customer email        |
+| c_name `(maxlength:180 character)`                  | string    | customer name         |
+| cart `(required)`                                   | integer   | cart                  |
 
 [Back](../README.md)

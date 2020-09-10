@@ -45,8 +45,9 @@ Used to create a refresh token for validate user.
 ```
 
 **Parameters**
-| Field | Type | Description |
-| :---------- | :----: | ---------------: |
-| refresh `(required)` | string | validate refresh token|
+
+| Field                |  Type  |            Description |
+| :------------------- | :----: | ---------------------: |
+| refresh `(required)` | string | validate refresh token |
 
 [Back](../README.md)

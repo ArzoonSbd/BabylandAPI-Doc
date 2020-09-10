@@ -35,6 +35,7 @@ Used to validate the token provided for given purpose and given user.
   "detail": "Token and identifier are needed."
 }
 ```
+
 **Condition** : If token is expired.
 
 **Code** : `400 Bad Request`
@@ -68,10 +69,11 @@ Used to validate the token provided for given purpose and given user.
 ```
 
 **Parameters**
-| Field | Type | Description |
-| :---------- | :----: | ---------------: |
-| token `(required and 10 to 50 characters)` | string | validate user token|
-| identifier`(required)` | longint | validate userID|
-| type `(required)`| ENUM[0,1] | where 0 is Email_Verification_Token and 1 is Forget_Password_Token |
+
+| Field                                      |   Type    |                                                        Description |
+| :----------------------------------------- | :-------: | -----------------------------------------------------------------: |
+| token `(required and 10 to 50 characters)` |  string   |                                                validate user token |
+| identifier`(required)`                     |  longint  |                                                    validate userID |
+| type `(required)`                          | ENUM[0,1] | where 0 is Email_Verification_Token and 1 is Forget_Password_Token |
 
 [Back](../README.md)

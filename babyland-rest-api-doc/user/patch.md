@@ -88,15 +88,16 @@ Example :
 ```
 
 **Parameters**
-| Field | Type | Description |
-| ------------------------------------------------------- | ----------- | ---------------------- |
-| first_name `(<= 30 characters)` | string | user first name |
-| last_name `(<= 150 characters)`| string | user last name |
-| date_joined `(read only and default now)`| string | user joined date |
-| is_active `(Default: true)` | boolean | user status |
-| email `(required and unique)`| string | user email |
-| gender `(Enum: "M" "F" "O" "N")`| string | user gender(O: Others, N: No Info) |
-| phone `(<= 15 characters)`| string | user phone number |
-| role `(Enum:"0" "1")` | integer | user role (0: Admin, 1: Staff)|
+
+| Field                                     | Type    | Description                        |
+| ----------------------------------------- | ------- | ---------------------------------- |
+| first_name `(<= 30 characters)`           | string  | user first name                    |
+| last_name `(<= 150 characters)`           | string  | user last name                     |
+| date_joined `(read only and default now)` | string  | user joined date                   |
+| is_active `(Default: true)`               | boolean | user status                        |
+| email `(required and unique)`             | string  | user email                         |
+| gender `(Enum: "M" "F" "O" "N")`          | string  | user gender(O: Others, N: No Info) |
+| phone `(<= 15 characters)`                | string  | user phone number                  |
+| role `(Enum:"0" "1")`                     | integer | user role (0: Admin, 1: Staff)     |
 
 [Back](../README.md)

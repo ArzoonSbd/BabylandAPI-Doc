@@ -118,26 +118,29 @@ Example :
 ```
 
 **Parameters**
-| Field | Type | Description |
-| ------------------------------------------------------- | ----------- | ---------------------- |
-| first_name `(<= 30 characters)` | string | customer first name |
-| last_name `(<= 150 characters)` | string | customer last name |
-| date_joined `(read only and default date now)`| Date | customer joined date |
-| is_active `(Default: true)` | boolean | customer status |
-| email `(required and unique)`| string | customer email |
-| address\*\* `(required)` | JSON object | customer address |
-| password `(required)` | string | customer password |
-| gender `(Enum: "M" "F" "O" "N")`| string | customer gender |
-| phone `(<= 15 characters and Nullable)` | string | customer phone number |
+
+| Field                                          | Type        | Description           |
+| ---------------------------------------------- | ----------- | --------------------- |
+| first_name `(<= 30 characters)`                | string      | customer first name   |
+| last_name `(<= 150 characters)`                | string      | customer last name    |
+| date_joined `(read only and default date now)` | Date        | customer joined date  |
+| is_active `(Default: true)`                    | boolean     | customer status       |
+| email `(required and unique)`                  | string      | customer email        |
+| address\*\* `(required)`                       | JSON object | customer address      |
+| password `(required)`                          | string      | customer password     |
+| gender `(Enum: "M" "F" "O" "N")`               | string      | customer gender       |
+| phone `(<= 15 characters and Nullable)`        | string      | customer phone number |
 
 **Address Parameters**
-| Field | Type | Description |
-| ------------------------------------------------------- | ----------- | ---------------------- |
-| name `(max 100 characters)` | string | customer address name |
-| addressline `(max 100 characters and default Nullable)` | string | customer addressline|
-| street `(max 255 characters)` | string | customer street name |
-| city `(max 50 characters)` | string | customer city name |
-| province `(max 50 characters)` | string | customer province name |
-| phone `(<= 15 characters and Nullable)` | string | customer phone number |
-| country `(max 50 characters and default value is Nepal)` | string | customer country name |
+
+| Field                                                    | Type   | Description            |
+| -------------------------------------------------------- | ------ | ---------------------- |
+| name `(max 100 characters)`                              | string | customer address name  |
+| addressline `(max 100 characters and default Nullable)`  | string | customer addressline   |
+| street `(max 255 characters)`                            | string | customer street name   |
+| city `(max 50 characters)`                               | string | customer city name     |
+| province `(max 50 characters)`                           | string | customer province name |
+| phone `(<= 15 characters and Nullable)`                  | string | customer phone number  |
+| country `(max 50 characters and default value is Nepal)` | string | customer country name  |
+
 [Back](../README.md)

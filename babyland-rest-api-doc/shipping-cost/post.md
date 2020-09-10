@@ -65,8 +65,9 @@ This API is used to create shipping cost by district and only customer token is 
 ```
 
 **Parameters**
-| Field | Type | Description |
-| ------------------------------------------------------- | ----------- | ---------------------- |
+
+| Field                 | Type   | Description                |
+| --------------------- | ------ | -------------------------- |
 | district `(required)` | string | district name from 77 list |
 
 [Back](../README.md)

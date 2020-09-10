@@ -92,7 +92,6 @@ Cart API Endpoints listed below:
 
 - [Get Cart](cart/get.md) : `GET /apps/cart/`
 - [Create Cart](cart/post.md) : `POST /apps/cart/`
-  [Back](../README.md)
 
 ### Delivery Cost API
 
@@ -142,3 +141,5 @@ Collection API Endpoints listed below:
 - [Partial Update collection by slug](collection/patch.md) : `PATCH /apps/collection/{slug}/`
 
 - [Delete collection by slug](collection/delete.md) : `DELETE /apps/collection/{slug}/`
+
+[Back](../README.md)

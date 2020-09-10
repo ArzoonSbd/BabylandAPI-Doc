@@ -78,9 +78,10 @@ Example :
 ```
 
 **Parameters**
-| Field | Type | Description |
-| ------------------------------------------------------- | ----------- | ---------------------- |
-| products `(required)` | integer | products id|
-| name `(required)` | string | product name |
+
+| Field                 | Type    | Description  |
+| --------------------- | ------- | ------------ |
+| products `(required)` | integer | products id  |
+| name `(required)`     | string  | product name |
 
 [Back](../README.md)

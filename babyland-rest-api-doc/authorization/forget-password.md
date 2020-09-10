@@ -35,6 +35,7 @@ Used to send forget password to a email of existing user/customer. Mail is only 
   "detail": "Email address needed."
 }
 ```
+
 **Condition** : If token is already sent.
 
 **Code** : `400 Bad Request`
@@ -63,7 +64,7 @@ Used to send forget password to a email of existing user/customer. Mail is only 
 
 ```json
 {
-  "email": "email",
+  "email": "email"
 }
 ```
 
@@ -76,8 +77,9 @@ Used to send forget password to a email of existing user/customer. Mail is only 
 ```
 
 **Parameters**
-| Field | Type | Description |
-| :---------- | :----: | ---------------: |
-| example `(required)` | email | email of the user/customer|
+
+| Field                | Type  |                Description |
+| :------------------- | :---: | -------------------------: |
+| example `(required)` | email | email of the user/customer |
 
 [Back](../README.md)

@@ -35,6 +35,7 @@ Used to activate the user with email validation through token.
   "detail": "Token and identifier are needed."
 }
 ```
+
 **Condition** : If token is expired.
 
 **Code** : `400 Bad Request`
@@ -68,10 +69,11 @@ Used to activate the user with email validation through token.
 ```
 
 **Parameters**
-| Field | Type | Description |
-| :---------- | :----: | ---------------: |
-| token `(required and 10 to 50 characters)` | string | validate user token|
-| identifier `(required)`| longint | validate userID|
-| type `(required)`| 0 | value must be 0|
+
+| Field                                      |  Type   |         Description |
+| :----------------------------------------- | :-----: | ------------------: |
+| token `(required and 10 to 50 characters)` | string  | validate user token |
+| identifier `(required)`                    | longint |     validate userID |
+| type `(required)`                          |    0    |     value must be 0 |
 
 [Back](../README.md)

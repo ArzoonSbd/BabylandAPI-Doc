@@ -85,9 +85,10 @@ To add products inside cart valid customer login is reguired and it accept bulk 
 ```
 
 **Parameters**
-| Field | Type | Description |
-| ------------------------------------------------------- | ----------- | ---------------------- |
-| id `(required)` | integer | valid product id in an array format|
-| quantity | integer | products quantity|
+
+| Field           | Type    | Description                         |
+| --------------- | ------- | ----------------------------------- |
+| id `(required)` | integer | valid product id in an array format |
+| quantity        | integer | products quantity                   |
 
 [Back](../README.md)

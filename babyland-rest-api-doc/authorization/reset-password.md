@@ -35,6 +35,7 @@ Used to reset the user/customer password through token.
   "detail": "Token and identifier are needed."
 }
 ```
+
 **Condition** : If token is expired.
 
 **Code** : `400 Bad Request`
@@ -46,6 +47,7 @@ Used to reset the user/customer password through token.
   "detail": "Token expires."
 }
 ```
+
 **Condition** : If new password doesn't satisfy minimum requirement.
 
 **Code** : `400 Bad Request`
@@ -65,7 +67,7 @@ Used to reset the user/customer password through token.
   "token": "string",
   "identifier": "longint",
   "type": "short",
-  "new_password": "string",
+  "new_password": "string"
 }
 ```
 
@@ -76,16 +78,17 @@ Used to reset the user/customer password through token.
   "token": "fb3c669bb0bb8580520a25cac35a0a7",
   "identifier": "2256",
   "type": "1",
-  "new_password": "newPass12@",
+  "new_password": "newPass12@"
 }
 ```
 
 **Parameters**
-| Field | Type | Description |
-| :---------- | :----: | ---------------: |
-| token `(required and 10 to 50 characters)` | string | validate user token|
-| identifier `(required)`| longint | validate userID|
-| type `(required)`| 1 | value must be 1|
-| new_password `(required and at least 8 characters with 1 digit and 1 number)`| string | valid new password|
+
+| Field                                                                         |  Type   |         Description |
+| :---------------------------------------------------------------------------- | :-----: | ------------------: |
+| token `(required and 10 to 50 characters)`                                    | string  | validate user token |
+| identifier `(required)`                                                       | longint |     validate userID |
+| type `(required)`                                                             |    1    |     value must be 1 |
+| new_password `(required and at least 8 characters with 1 digit and 1 number)` | string  |  valid new password |
 
 [Back](../README.md)

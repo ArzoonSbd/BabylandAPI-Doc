@@ -67,8 +67,9 @@ The post method api is used to add wishlist with valid customer login. To create
 ```
 
 **Parameters**
-| Field | Type | Description |
-| ------------------------------------------------------- | ----------- | ---------------------- |
+
+| Field                   | Type    | Description                         |
+| ----------------------- | ------- | ----------------------------------- |
 | product_id `(required)` | integer | valid product id to add in wishlist |
 
 [Back](../README.md)

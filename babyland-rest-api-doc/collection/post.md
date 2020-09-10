@@ -79,11 +79,12 @@ Example :
 ```
 
 **Parameters**
-| Field | Type | Description |
-| ------------------------------------------------------- | ----------- | ---------------------- |
-| products `(required)` | integer | products id|
-| name `(required)` | string | product name |
-| slug `(readOnly and pattern: ^[-a-zA-Z0-9_]+$)`| string | product slug |
-| image `(readonly)` | uri | product image |
+
+| Field                                           | Type    | Description   |
+| ----------------------------------------------- | ------- | ------------- |
+| products `(required)`                           | integer | products id   |
+| name `(required)`                               | string  | product name  |
+| slug `(readOnly and pattern: ^[-a-zA-Z0-9_]+$)` | string  | product slug  |
+| image                                           | uri     | product image |
 
 [Back](../README.md)

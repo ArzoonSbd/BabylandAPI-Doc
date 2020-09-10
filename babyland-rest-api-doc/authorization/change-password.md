@@ -59,9 +59,10 @@ Only valid user and customer able to change password.
 ```
 
 **Parameters**
-| Field | Type | Description |
-| ------------------------------------------------------- | ----------- | ---------------------- |
-| old_password `(required)`| string | user old password |
-| new_password `(required)`| string | user new password |
+
+| Field                     | Type   | Description       |
+| ------------------------- | ------ | ----------------- |
+| old_password `(required)` | string | user old password |
+| new_password `(required)` | string | user new password |
 
 [Back](../README.md)
